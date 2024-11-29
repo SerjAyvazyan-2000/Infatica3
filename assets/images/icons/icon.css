@@ -114,3 +114,15 @@
     mask-image: url(polygon.svg);
     -webkit-mask-image: url(polygon.svg);
 }
+.icon-home-service{
+    mask-image: url(homeServices.svg);
+    -webkit-mask-image: url(homeServices.svg);
+}
+.icon-service-advantage{
+    mask-image: url(servers-advantage1.svg);
+    -webkit-mask-image: url(servers-advantage1.svg);
+}
+.icon-service-advantage2{
+    mask-image: url(server-advantage2.svg);
+    -webkit-mask-image: url(server-advantage2.svg);
+}

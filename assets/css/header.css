@@ -4,6 +4,7 @@
     width: 100%;
     left: 0;
     top: 20px;
+    z-index: 10;
 
 
 }
@@ -16,6 +17,7 @@
     padding: 15px 12px;
     gap: 30px;
     align-items: center;
+
 }
 
 .header-logo {
@@ -24,38 +26,12 @@
     display: flex;
 }
 
-.header-logo-text {
-    position: absolute;
-    left: 32px;
-    bottom: -3px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 24px;
-    color: #1C1C20;
 
-}
 
 .header-logo img {
     max-width: 180px;
 }
 
-.learn-more {
-    padding: 2px 5px;
-    border-radius: 6px;
-    background: #D6EDFF;
-    color: #218AEF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    text-decoration: underline;
-    position: relative;
-    right: -2px;
-    height: max-content;
-    text-underline-offset: 2px;
-    top: 15px;
-
-}
 
 .icon-arrow-down {
     font-size: 25px;
@@ -803,9 +779,7 @@
 }
 
 @media (max-width: 1200px) {
-    .learn-more {
-        display: none;
-    }
+
 
     .header-body {
         gap: 10px;
@@ -843,7 +817,7 @@
         padding: 0 39px;
         background: white;
         width: 100%;
-        overflow-y: auto;
+        overflow-y: hidden; /* По умолчанию скрываем скрол */
         overflow-x: hidden;
         height: 100%;
         transition: .3s;
@@ -1036,7 +1010,7 @@
 
     }
     .burger{
-        width: 20px;
+        width: 18px;
         height: 13px;
     }
     .burger.active::before {
@@ -1049,7 +1023,7 @@
     }
     .burger.active::after {
         transform: rotate(45deg);
-        bottom: 8px;
+        bottom: 9px;
         height: 1.5px;
         position: relative;
 
@@ -1062,7 +1036,7 @@
     .header-logo-mobile{
         display: block;
     }
-    .header-logo{
+    .header-logo-desctop{
         display: none;
     }
     .proxy-header-title{
@@ -1085,6 +1059,9 @@
 
     }
     .header-body{
-         padding: 5px 15px;
+         padding: 8px 10px;
+    }
+    .header{
+         top: 8px;
     }
 }

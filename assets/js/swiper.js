@@ -1,12 +1,11 @@
 
-const swiper = new Swiper('.indispensable-swiper', {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    loop: true,
+const swiper = new Swiper('.services-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 32,
+    // loop: true,
     pagination: {
-        el: '.indispensable-pagination',
+        el: '.services-pagination',
         clickable: true,
-
     },
 
     navigation: {
@@ -30,7 +29,7 @@ const swiper = new Swiper('.indispensable-swiper', {
 
         },
         1200: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
     }
 
