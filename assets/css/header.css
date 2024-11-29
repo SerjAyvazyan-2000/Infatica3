@@ -22,7 +22,6 @@
 
 .header-logo {
     position: relative;
-    flex: 1 1 auto;
     display: flex;
 }
 
@@ -684,6 +683,9 @@
 .mobile-actions {
     display: none;
 }
+.burger{
+    display: none;
+}
 
 .locations-sub-block {
     min-width: 418px;
@@ -919,9 +921,7 @@
 
     }
 
-    .header-logo {
-        flex: initial;
-    }
+
 
     .burger::before {
         width: 100%;
