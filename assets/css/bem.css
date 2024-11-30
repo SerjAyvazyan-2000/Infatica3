@@ -20,16 +20,30 @@
     padding: 0 15px;
 }
 
+.btn-primary:hover {
+    background: white;
+    color: #434396;
+    border: 1px solid #434396;
+
+}
 .btn-primary{
-    border-radius: 6px;
+    transition: .3s;
     background:  #434396;
-    color: #FFF;
+    color: white;
+    border: 1px solid transparent;
 
 }
 .btn-border{
     border-radius: 6px;
     border: 1px solid #434396;
     color:  #434396;
+    transition: .3s;
+
+}
+.btn-border:hover{
+    background:  #434396;
+    color: white;
+
 
 }
 .sub-block{

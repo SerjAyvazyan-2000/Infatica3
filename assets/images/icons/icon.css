@@ -126,3 +126,43 @@
     mask-image: url(server-advantage2.svg);
     -webkit-mask-image: url(server-advantage2.svg);
 }
+.icon-arrow-gray{
+    mask-image: url(arrowLeft.svg);
+    -webkit-mask-image: url(arrowLeft.svg);
+}
+.icon-home-service2{
+    mask-image: url(icon-home-service2.svg);
+    -webkit-mask-image: url(icon-home-service2.svg);
+}
+.icon-home-service3{
+    mask-image: url(icon-home-service3.svg);
+    -webkit-mask-image: url(icon-home-service3.svg);
+}
+.icon-home-service4{
+    mask-image: url(icon-home-service4.svg);
+    -webkit-mask-image: url(icon-home-service4.svg);
+}
+.icon-scrapingIcon{
+    mask-image: url(scrapingIcon.svg);
+    -webkit-mask-image: url(scrapingIcon.svg);
+}
+.icon-scrapingIcon2{
+    mask-image: url(scrapingIcon2.svg);
+    -webkit-mask-image: url(scrapingIcon2.svg);
+}
+.icon-scrapingIcon3{
+    mask-image: url(icon-scrapingIcon3.svg);
+    -webkit-mask-image: url(icon-scrapingIcon3.svg);
+}
+.icon-sotial{
+    mask-image: url(sotial.svg);
+    -webkit-mask-image: url(sotial.svg);
+}
+.icon-sotial2{
+    mask-image: url(icon-sotial2.svg);
+    -webkit-mask-image: url(icon-sotial2.svg);
+}
+.icon-sotial3{
+    mask-image: url(icon-sotial3.svg);
+    -webkit-mask-image: url(icon-sotial3.svg);
+}

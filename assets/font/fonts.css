@@ -29,7 +29,7 @@
 }
 @font-face {
     font-family: "Metropolis";
-    src: url('Metropolis-Black.woff') format('woff'),
-    local('Metropolis-Black.woff');
+    src: url('Metropolis-Bold.woff') format('woff'),
+    local('Metropolis-Bold.woff');
     font-weight: 700;
 }

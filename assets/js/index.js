@@ -72,21 +72,18 @@ menuLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault(); // Отключаем переход по ссылке
 
-        const linkDataVal = link.getAttribute('data-val'); // Получаем значение data-val текущей ссылки
-        const targetSubBlock = document.querySelector(`.sub-block[data-val="${linkDataVal}"]`); // Ищем соответствующий sub-block
+        const linkDataVal = link.getAttribute('data-val');
+        const targetSubBlock = document.querySelector(`.sub-block[data-val="${linkDataVal}"]`);
 
-        // Если у ссылки уже есть класс active, удаляем его и у sub-block
         if (link.classList.contains('active')) {
             link.classList.remove('active');
             if (targetSubBlock) {
                 targetSubBlock.classList.remove('active');
             }
         } else {
-            // Удаляем классы active у всех ссылок и блоков
             menuLinks.forEach(link => link.classList.remove('active'));
             document.querySelectorAll('.sub-block').forEach(block => block.classList.remove('active'));
 
-            // Добавляем active текущей ссылке и её sub-block
             link.classList.add('active');
             if (targetSubBlock) {
                 targetSubBlock.classList.add('active');
@@ -95,19 +92,92 @@ menuLinks.forEach(link => {
     });
 });
 
-// const menuItems = document.querySelectorAll('.menu-list-item');
-// const headerBody = document.querySelector('.header-body');
-//
-// // Добавляем обработчик событий для каждого элемента
-// menuItems.forEach(item => {
-//     item.addEventListener('mouseenter', () => {
-//         // Добавляем класс active к .header-body при наведении
-//         headerBody.classList.add('active');
-//     });
-//
-//     item.addEventListener('mouseleave', () => {
-//         // Убираем класс active у .header-body, когда убирается hover
-//         headerBody.classList.remove('active');
-//     });
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const servicesClue = document.querySelectorAll('.services-clue');
+    const catalogItems = document.querySelectorAll('.services-catalog-item');
+    const slides = document.querySelectorAll('.services-slides');
+    const catalog = document.querySelectorAll('.datasets-catalog');
 
+    const showContent = (dataVal) => {
+        slides.forEach(slide => {
+            if (slide.dataset.val === dataVal) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+            if(window.innerWidth <= 768){
+                slide.classList.add('active');
+
+            }
+        });
+
+        catalogItems.forEach(item => {
+            if (item.dataset.val === dataVal) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+        servicesClue.forEach(item => {
+            if (item.dataset.val === dataVal) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+            if(window.innerWidth <= 768){
+                item.classList.remove('active');
+            }
+        });
+        catalog.forEach(item => {
+            if (item.dataset.val === dataVal) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+
+        });
+    };
+
+    catalogItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const dataVal = item.dataset.val;
+            showContent(dataVal);
+        });
+    });
+
+    if (catalogItems.length > 0) {
+        showContent(catalogItems[0].dataset.val);
+    }
+    if (window.innerWidth <= 768) {
+        showContent(catalogItems[0].dataset.val);
+    }
+    // window.addEventListener("resize", function () {
+    //     showContent(catalogItems[0].dataset.val);
+    //
+    // });
+
+});
+
+const profilesSubData = document.querySelector('.profiles-sub-data');
+const profilesColumns = document.querySelector('.profiles-columns');
+const profilesSubBlock = document.querySelector('.profiles-sub-block');
+
+function handleResize() {
+    if (window.innerWidth < 992) {
+        // Перемещаем profiles-sub-data внутрь profiles-columns
+        if (!profilesColumns.contains(profilesSubData)) {
+            profilesColumns.appendChild(profilesSubData);
+        }
+    } else {
+        // Возвращаем profiles-sub-data в profiles-sub-block
+        if (!profilesSubBlock.contains(profilesSubData)) {
+            profilesSubBlock.appendChild(profilesSubData);
+        }
+    }
+}
+
+// Слушать изменения размеров окна
+window.addEventListener('resize', handleResize);
+
+// Вызвать функцию при загрузке страницы
+handleResize();

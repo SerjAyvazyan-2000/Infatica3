@@ -23,8 +23,8 @@
 .header-logo {
     position: relative;
     display: flex;
+    z-index: 1;
 }
-
 
 
 .header-logo img {
@@ -89,8 +89,12 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 24px;
+    border-radius: 6px;
+    color: #FFF;
     padding: 8px 22px;
+    transition: .3s;
 }
+
 
 .start-btn {
     font-size: 12px;
@@ -623,7 +627,8 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #F5F5F5;
 }
-.location-sub-title{
+
+.location-sub-title {
     color: #7D7D82;
     font-size: 13px;
     font-weight: 700;
@@ -633,6 +638,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #F5F5F5;
 }
+
 .companies-list {
     margin-top: 20px;
     gap: 16px;
@@ -683,7 +689,8 @@
 .mobile-actions {
     display: none;
 }
-.burger{
+
+.burger {
     display: none;
 }
 
@@ -770,7 +777,8 @@
     line-height: 18px;
     transition: .3s;
 }
-.header-logo-mobile{
+
+.header-logo-mobile {
     display: none;
 }
 
@@ -787,7 +795,7 @@
         gap: 10px;
     }
 
-    .contact-btn {
+    .start-btn-desktop {
         display: none;
     }
 
@@ -796,8 +804,13 @@
     }
 
     .profiles-sub-data {
-        margin: 0 30px;
-        max-width: 100%;
+
+        margin: 22px 0 0 75px;
+    }
+
+    .data-services-title{
+        color: #434396;
+
     }
 
     .profiles-columns {
@@ -814,18 +827,24 @@
 
     .menu {
         position: fixed;
-        left: 0;
-        top: -100%;
-        padding: 0 39px;
+        left: -100%;
+        top: 0;
+        padding: 0 35px ;
         background: white;
         width: 100%;
-        overflow-y: hidden; /* По умолчанию скрываем скрол */
-        overflow-x: hidden;
+        overflow: auto;
         height: 100%;
         transition: .3s;
+
     }
-    .menu.active{
-         top: 120px;
+    .menu.active {
+        left: 0;
+    }
+    .menu-list{
+        transition: .3s;
+    }
+    .menu.active .menu-list {
+        padding-top: 100px;
     }
 
     .sub-block {
@@ -876,18 +895,22 @@
     }
 
     .header-body {
-        padding: 10px 39px;
+        padding: 10px 16px;
     }
-
 
 
     .menu-list {
         flex-direction: column;
         align-items: stretch;
     }
-
-    .header-actions {
+    .header-body{
+        gap: 20px;
+    }
+    .sign-in-btn-desktop {
         display: none;
+    }
+    .header-logo{
+        flex: 1 1 auto;
     }
 
     .burger {
@@ -920,7 +943,6 @@
         transition: .3s;
 
     }
-
 
 
     .burger::before {
@@ -970,30 +992,37 @@
         position: relative;
 
     }
-    .profiles-column{
+
+    .profiles-column {
         max-width: 330px;
     }
-    .profiles-sub-data{
-        margin: 0;
+
+
+
+
+    .company-sub-block {
+        padding: 12px 20px;
     }
-    .company-sub-block{
-         padding: 12px 20px;
-    }
-    .company-sub-title{
+
+    .company-sub-title {
         display: none;
     }
-    .companies-list{
-         margin-top: 0;
+
+    .companies-list {
+        margin-top: 0;
         gap: 10px;
     }
-    .companies-list a{
-         max-width: 232px;
+
+    .companies-list a {
+        max-width: 232px;
     }
-    .locations-sub-block{
-         padding: 24px  20px;
+
+    .locations-sub-block {
+        padding: 24px 20px;
     }
-    .location-sub-title{
-        color:  #434396;
+
+    .location-sub-title {
+        color: #434396;
 
     }
 }
@@ -1005,14 +1034,20 @@
 @media (max-width: 576px) {
 
     .menu.active {
-        padding: 0 15px;
-        top: 80px;
+        padding: 0 30px;
 
     }
-    .burger{
+    .profiles-sub-data{
+        margin: 0;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .burger {
         width: 18px;
         height: 13px;
     }
+
     .burger.active::before {
         transform: rotate(-45deg);
         top: 3px;
@@ -1021,6 +1056,7 @@
 
 
     }
+
     .burger.active::after {
         transform: rotate(45deg);
         bottom: 9px;
@@ -1030,38 +1066,48 @@
     }
 
 
-    .service-item-content{
+    .service-item-content {
         margin: 0;
     }
-    .header-logo-mobile{
+
+    .header-logo-mobile {
         display: block;
     }
-    .header-logo-desctop{
+
+    .header-logo-desctop {
         display: none;
     }
-    .proxy-header-title{
-         margin: 0;
+
+    .proxy-header-title {
+        margin: 0;
     }
+
     .pricing-item-content {
         padding-right: 0;
     }
-    .pricing-data-services{
-         padding: 40px 0 30px 0  ;
+
+    .pricing-data-services {
+        padding: 40px 0 30px 0;
     }
-    .pricing-sub-title{
-         margin: 0;
+
+    .pricing-sub-title {
+        margin: 0;
     }
-    .by-company{
-         padding-left: 0;
+
+    .by-company {
+        padding-left: 0;
     }
-    .by-company-title{
-        color:  #434396;
+
+    .by-company-title {
+        color: #434396;
 
     }
-    .header-body{
-         padding: 8px 10px;
+
+    .header-body {
+        padding: 8px 10px;
     }
-    .header{
-         top: 8px;
+
+    .header {
+        top: 8px;
     }
 }
