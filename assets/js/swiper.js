@@ -1,7 +1,7 @@
 
 const swiper = new Swiper('.proxy-swiper', {
     slidesPerView: 4,
-    spaceBetween: 32,
+    spaceBetween: 30,
     pagination: {
         el: '.services-pagination',
         clickable: true,
@@ -79,7 +79,7 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
     spaceBetween: 32,
     // loop:true,
     pagination: {
-        el: '.services-pagination',
+        el: '.datasets-pagination',
         clickable: true,
     },
     navigation: {
