@@ -90,6 +90,7 @@
     color: #FFF;
     padding: 8px 22px;
     transition: .3s;
+    height: 40px;
 }
 
 
@@ -98,6 +99,7 @@
     font-weight: 500;
     line-height: 24px;
     padding: 8px 22px;
+    height: 40px;
 
 }
 
@@ -915,9 +917,9 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 3px;
-        width: 30px;
+        width: 18px;
         border-radius: 100px;
-        height: 20px;
+        height: 12px;
         cursor: pointer;
         transition: .3s;
         z-index: 4;
@@ -984,7 +986,7 @@
 
     .burger.active::after {
         transform: rotate(45deg);
-        bottom: 12px;
+        bottom: 4px;
         height: 1.5px;
         position: relative;
 
@@ -1025,6 +1027,9 @@
 }
 
 @media (max-width: 768px) {
+    .header-body {
+        padding: 8px 16px;
+    }
 
 }
 
@@ -1040,27 +1045,10 @@
     .contact-btn{
         display: none;
     }
-    .burger {
-        width: 18px;
-        height: 13px;
-    }
-
-    .burger.active::before {
-        transform: rotate(-45deg);
-        top: 3px;
-        position: relative;
-        height: 1.5px;
 
 
-    }
 
-    .burger.active::after {
-        transform: rotate(45deg);
-        bottom: 9px;
-        height: 1.5px;
-        position: relative;
 
-    }
 
 
     .service-item-content {

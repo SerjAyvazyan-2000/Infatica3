@@ -29,6 +29,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .hero-content-clue {
@@ -59,9 +60,7 @@
     align-items: center;
 }
 
-.swiper{
-    overflow: unset;
-}
+
 .hero-title {
     color: #434396;
     text-align: center;
@@ -157,6 +156,19 @@
 
 }
 
+.scraping-section {
+    position: relative;
+    padding: 80px 0 120px;
+    background: linear-gradient(90deg, #0F0F62 0%, #05294C 33.33%, #05294C 66.67%, #3D0A9F 100%);
+}
+
+.datasets-section {
+    position: relative;
+    padding: 80px 0 120px;
+    background: linear-gradient(90deg, #05294C 0%, #3D0A9F 33.33%, #3D0A9F 66.67%, #0F0F62 100%);
+
+}
+
 .services-section::after {
     content: "";
     display: block;
@@ -171,6 +183,56 @@
 }
 
 .services-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/services-bg.png');
+    background-repeat: no-repeat;
+}
+
+.scraping-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-image: url('/assets/images/services-bg.png');
+    background-repeat: no-repeat;
+
+}
+
+.scraping-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/services-bg.png');
+    background-repeat: no-repeat;
+}
+
+.datasets-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-image: url('/assets/images/services-bg.png');
+    background-repeat: no-repeat;
+
+}
+
+.datasets-section::before {
     content: "";
     display: block;
     position: absolute;
@@ -330,10 +392,12 @@
 .icon-service-advantage {
     background-color: rgba(125, 125, 130, 1);
 }
-.icon-service{
+
+.icon-service {
     font-size: 40px;
 
 }
+
 .service-advantage {
     gap: 5px;
 }
@@ -358,10 +422,11 @@
     gap: 10px;
     margin-left: -5px;
 }
-.datasets-pagination{
+
+.datasets-pagination {
     display: flex;
     position: initial;
-    margin-top: 12px;
+    margin-top: 32px;
     gap: 10px;
     margin-left: -2px;
 
@@ -653,7 +718,6 @@
 }
 
 
-
 .scraping-pagination {
     display: none;
 }
@@ -663,34 +727,31 @@
     padding-bottom: 32px;
 }
 
-.services-mobile-clue h3 {
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
 
-.services-mobile-clue p {
-    margin-top: 8px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-}
+
 
 @media (max-width: 1400px) {
     .services-section::after {
         width: 100%;
     }
+
+    .scraping-section::after {
+        width: 100%;
+
+    }
+
+    .datasets-section::after {
+        width: 100%;
+
+    }
+
 }
 
 @media (max-width: 1200px) {
     .scraping-pagination {
         position: initial;
         display: flex;
-        margin-top: 30px;
+        margin-top: 32px;
         gap: 10px;
         margin-left: -5px;
 
@@ -721,10 +782,7 @@
 }
 
 @media (max-width: 768px) {
-    .hero-clue {
-        font-size: 14px;
-        line-height: 24px;
-    }
+
 
     .services-mobile-clue {
         display: block;
@@ -735,12 +793,26 @@
 
     }
 
+    .swiper {
+        overflow: unset;
+    }
+
+    .scraping-section {
+        background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
+    }
+
+
+    .datasets-section {
+        background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
+    }
+
     .datasets-item {
         min-height: 300px;
+        max-width: 268px;
     }
 
     .proxy-slides {
-        margin-top: 32px;
+        margin-top: 40px;
     }
 
     .datasets-slides {
@@ -751,8 +823,17 @@
         padding: 45px 0 93px 0;
     }
 
+    .scraping-section {
+        padding: 45px 0 93px 0;
+    }
+
+    .datasets-section {
+        padding: 45px 0 93px 0;
+
+    }
+
     .services-title {
-        font-size: 24px;
+        font-size: 28px;
         line-height: normal;
     }
 
@@ -769,11 +850,10 @@
     }
 
     .hero-title {
-        font-size: 28px;
-        font-weight: 800;
-        line-height: 42px;
-        max-width: 330px;
-        margin-top: 8px;
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: -0.32px;
+        margin-top: 34px;
     }
 
     .datasets-catalog.active {
@@ -781,53 +861,155 @@
     }
 
     .hero-title span {
-        font-size: 28px;
-        font-weight: 800;
-        line-height: 42px;
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: -0.32px;
     }
 
     .services-contents {
         gap: 56px;
     }
 
-    .hero-bottom-text {
-        display: none;
+
+    .services-item{
+        min-width: 268px;
+        min-height: 440px;
+        padding: 22px 20px;
+    }
+    .hero-content {
+        padding-top: 106px;
     }
 
+
+
+    .hero-btn {
+        max-width: 280px;
+        width: 100%;
+        height: 60px;
+    }
+
+    .hero-text {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .hero-bottom-text{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 80px;
+    }
+    .hero-content-tools {
+        margin-top: 64px;
+        gap: 32px;
+        width: 100%;
+    }
+    .hero-section{
+         min-height: 532px;
+    }
+    .hero-section::after {
+        background: url("/assets/images/hero-bgTablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .header-logo-desctop{
+        max-width: 238px;
+    }
+    .services-mobile-clue h3 {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+    .services-mobile-clue p {
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 1);
+        font-style: normal;
+        opacity: .7;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hero-section::after {
+        background: url("/assets/images/heroMobileBg.png");
+        background-position: center;
+    }
     .hero-content {
         padding-top: 128px;
     }
+    .services-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .services-section {
+        padding: 40px 0 93px 0;
+    }
 
+    .services-mobile-clue p {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 21px;
+    }
+    .services-mobile-clue h3 {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .hero-text {
+        font-size: 16px;
+        line-height: 150%;
+        margin-top: 24px;
+    }
+    .hero-title {
+        font-size: 28px;
+        margin-top: 8px;
+        line-height: 150%;
+    }
+    .hero-title span {
+        font-size: 28px;
+        line-height: 150%;
+    }
+    .hero-btn {
+        max-width: 330px;
+
+    }
+    .icon-service {
+        font-size: 30px;
+
+    }
+    .proxy-slides {
+        margin-top: 32px;
+    }
     .hero-content-tools {
         margin-top: 56px;
         flex-direction: column;
         gap: 16px;
         width: 100%;
     }
-
-    .hero-btn {
+    .hero-clue {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .hero-bottom-text {
+        display: none;
+    }
+    .services-mobile-clue p {
         max-width: 330px;
-        width: 100%;
-        font-weight: 600;
-        line-height: 28px;
     }
+    .datasets-pagination {
 
-    .hero-text {
-        font-size: 16px;
-        line-height: 150%;
-    }
-}
+        margin-top: 23px;
 
-@media (max-width: 576px) {
-    .hero-section::after {
-        background: url("/assets/images/heroMobileBg.png");
-    }
-    .icon-service{
-        font-size: 30px;
 
-    }
-    .services-mobile-clue p{
-        max-width: 330px;
     }
     .hero-section {
         min-height: 588px;

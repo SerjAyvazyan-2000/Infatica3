@@ -16,12 +16,18 @@ const swiper = new Swiper('.proxy-swiper', {
             spaceBetween: 16
         },
         567: {
-            slidesPerView: 2,
+            slidesPerView: 3,
+
+        },
+        700: {
+            slidesPerView: 2.7,
+            spaceBetween: 34,
 
         },
 
         900: {
             slidesPerView: 3,
+            spaceBetween: 16
 
         },
         1200: {
@@ -55,6 +61,12 @@ const swiperScarping = new Swiper('.scraping-swiper', {
             slidesPerView: 2,
 
         },
+        700: {
+            slidesPerView:2.4 ,
+            spaceBetween: 16,
+
+        },
+
 
         900: {
             slidesPerView: 2,
@@ -68,11 +80,6 @@ const swiperScarping = new Swiper('.scraping-swiper', {
 
 
 });
-// if(swiperScarping.slidesPerView === 3 || swiperScarping.slidesPerView < 2) {
-//     swiperScarping.loop = true;
-//     swiperScarping.slidesPerView = 2
-// }
-
 
 const swiperDatasets = new Swiper('.datasets-swiper', {
     slidesPerView: 4,
@@ -95,9 +102,15 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
             slidesPerView: 2,
 
         },
+        700: {
+            slidesPerView:2.7 ,
+            spaceBetween: 16,
+
+        },
 
         900: {
             slidesPerView: 3,
+            spaceBetween: 16
 
         },
         1200: {

@@ -97,13 +97,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalogItems = document.querySelectorAll('.services-catalog-item');
     const slides = document.querySelectorAll('.services-slides');
     const catalog = document.querySelectorAll('.datasets-catalog');
+    const servicesSection = document.querySelector('.services-section');
 
     const showContent = (dataVal) => {
         slides.forEach(slide => {
+
             if (slide.dataset.val === dataVal) {
                 slide.classList.add('active');
             } else {
                 slide.classList.remove('active');
+
             }
             if(window.innerWidth <= 768){
                 slide.classList.add('active');
@@ -145,16 +148,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    catalogItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const dataVal = item.dataset.val;
+
+            // Убираем все классы, которые начинаются с `proxy-section`, `scraping-section`, `datasets-section`
+            servicesSection.className = servicesSection.className
+                .split(' ')
+                .filter(cls => !cls.endsWith('-section'))
+                .join(' ');
+
+            // Добавляем новый класс
+            if (dataVal === 'proxy-catalog') {
+                servicesSection.classList.add('services-section');
+            } else if (dataVal === 'scraping-catalog') {
+                servicesSection.classList.add('scraping-section');
+            } else if (dataVal === 'datasets-catalog') {
+                servicesSection.classList.add('datasets-section');
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+
+
     if (catalogItems.length > 0) {
         showContent(catalogItems[0].dataset.val);
     }
     if (window.innerWidth <= 768) {
         showContent(catalogItems[0].dataset.val);
     }
-    // window.addEventListener("resize", function () {
-    //     showContent(catalogItems[0].dataset.val);
-    //
-    // });
+
 
 });
 
@@ -164,20 +194,16 @@ const profilesSubBlock = document.querySelector('.profiles-sub-block');
 
 function handleResize() {
     if (window.innerWidth < 992) {
-        // Перемещаем profiles-sub-data внутрь profiles-columns
         if (!profilesColumns.contains(profilesSubData)) {
             profilesColumns.appendChild(profilesSubData);
         }
     } else {
-        // Возвращаем profiles-sub-data в profiles-sub-block
         if (!profilesSubBlock.contains(profilesSubData)) {
             profilesSubBlock.appendChild(profilesSubData);
         }
     }
 }
 
-// Слушать изменения размеров окна
 window.addEventListener('resize', handleResize);
 
-// Вызвать функцию при загрузке страницы
 handleResize();
