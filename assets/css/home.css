@@ -602,6 +602,7 @@
     border-radius: 24px;
     background: #F9FAFB;
     min-width: 569px;
+    overflow: hidden;
 }
 
 .scraping-item-text {
