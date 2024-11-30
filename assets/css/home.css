@@ -542,6 +542,7 @@
     min-width: 569px !important;
     flex-shrink: 0 !important;
 
+
 }
 
 .scraping-swiper .swiper-slide.small-slide {
@@ -608,6 +609,7 @@
     border-radius: 24px;
     background: #F9FAFB;
     min-width: 569px;
+    min-height: 444px;
     overflow: hidden;
 }
 
@@ -887,7 +889,9 @@
         padding-top: 106px;
     }
 
-
+    .scraping-item {
+        min-height: 440px;
+    }
 
     .hero-btn {
         max-width: 280px;
