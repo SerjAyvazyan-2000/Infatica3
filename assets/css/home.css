@@ -535,13 +535,19 @@
     width: auto;
     transition: all 0.3s ease;
 }
-
+.scraping-swiper .swiper-slide {
+    flex-shrink: 0 !important;
+}
 .scraping-swiper .swiper-slide.big-slide {
     min-width: 569px !important;
+    flex-shrink: 0 !important;
+
 }
 
 .scraping-swiper .swiper-slide.small-slide {
     max-width: 269px !important;
+    flex-shrink: 0 !important;
+
 
 }
 

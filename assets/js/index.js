@@ -152,13 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             const dataVal = item.dataset.val;
 
-            // Убираем все классы, которые начинаются с `proxy-section`, `scraping-section`, `datasets-section`
             servicesSection.className = servicesSection.className
                 .split(' ')
                 .filter(cls => !cls.endsWith('-section'))
                 .join(' ');
 
-            // Добавляем новый класс
             if (dataVal === 'proxy-catalog') {
                 servicesSection.classList.add('services-section');
             } else if (dataVal === 'scraping-catalog') {
@@ -168,14 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-
-
-
-
-
-
-
 
 
     if (catalogItems.length > 0) {
