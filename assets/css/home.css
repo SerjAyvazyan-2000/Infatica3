@@ -120,12 +120,11 @@
 .hero-primary-btn {
     border-radius: 4px;
     padding: 16px 80px;
-    border: 1px solid #000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     text-align: center;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 28px;
     max-width: 280px;
     width: 100%;
@@ -288,7 +287,7 @@
 
 .services-catalog-item::after {
     width: 100%;
-    height: 1px;
+    height: 2px;
     content: '';
     display: block;
     background: #434396;
@@ -373,7 +372,7 @@
 }
 
 .services-item {
-    padding: 24px 20px;
+    padding: 22px 20px;
     border-radius: 24px;
     border: 1px solid #FFF;
     background: #F9FAFB;
@@ -387,6 +386,8 @@
 .service-advantages {
     gap: 16px;
     flex: 1 1 auto;
+    justify-content: space-between;
+
 }
 
 .icon-service-advantage {
@@ -492,7 +493,7 @@
     color: #FFF;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 24px;
     height: 40px;
     display: flex;
@@ -514,8 +515,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    background: #0B5398;
+    transition: .3s;
 
+}
+.scraping-small-btn{
+    border-radius: 4px;
+    padding: 12px 28px;
+    max-width: 220px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0B5398;
+    transition: .3s;
+}
+.scraping-small-btn:hover{
+    background: white;
+    color: #434396;
+    border: 1px solid #434396;
+}
+.scraping-btn:hover{
+    background: white;
+    color: #434396;
+    border: 1px solid #434396;
+}
 .scarping-item-fon {
     width: 300px;
     height: 440px;
@@ -677,15 +706,18 @@
     background: rgba(249, 250, 251, 1);
     margin-left: 20px;
 }
+.datasets-icon{
+    margin-left: 20px;
 
+}
 .icon-sotial2 {
-    font-size: 40px;
+    font-size: 25px;
     background: rgba(249, 250, 251, 1);
     margin-left: 20px;
 }
 
 .icon-sotial3 {
-    font-size: 40px;
+    font-size: 25px;
     background: rgba(249, 250, 251, 1);
     margin-left: 20px;
 }

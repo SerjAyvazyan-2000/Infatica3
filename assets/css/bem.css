@@ -50,6 +50,7 @@
     position: absolute;
 
 }
+
 .sub-header-title{
     color:  #7D7D82;
     font-size: 13px;
@@ -135,6 +136,14 @@
 @media (max-width: 992px) {
     .sub-header-title {
         color: #434396;
+
+    }
+    .sub-block{
+        display: none;
+
+    }
+    .menu-list-item.active .sub-block{
+        display: block;
 
     }
     .pricing-service-item{

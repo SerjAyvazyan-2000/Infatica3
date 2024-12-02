@@ -197,3 +197,21 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 
 handleResize();
+
+
+function toggleActiveHost(item) {
+    const allItems = document.querySelectorAll('.menu-list-item ');
+
+    allItems.forEach(otherItem => {
+        if (otherItem !== item) {
+            otherItem.classList.remove('active');
+        }
+    });
+
+    item.classList.toggle('active');
+}
+
+document.querySelectorAll('.menu-list-item ').forEach(item => {
+    item.addEventListener('click', () => toggleActiveHost(item));
+
+});
