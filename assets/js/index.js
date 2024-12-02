@@ -200,7 +200,7 @@ handleResize();
 
 
 function toggleActiveHost(item) {
-    const allItems = document.querySelectorAll('.menu-list-item ');
+    const allItems = document.querySelectorAll('.menu-list-item');
 
     allItems.forEach(otherItem => {
         if (otherItem !== item) {
@@ -211,7 +211,15 @@ function toggleActiveHost(item) {
     item.classList.toggle('active');
 }
 
-document.querySelectorAll('.menu-list-item ').forEach(item => {
-    item.addEventListener('click', () => toggleActiveHost(item));
+document.querySelectorAll('.menu-list-item').forEach(item => {
+    item.addEventListener('click', (event) => {
+        event.stopPropagation();
+        toggleActiveHost(item);
+    });
+});
 
+document.addEventListener('click', (event) => {
+    document.querySelectorAll('.menu-list-item.active').forEach(activeItem => {
+        activeItem.classList.remove('active');
+    });
 });

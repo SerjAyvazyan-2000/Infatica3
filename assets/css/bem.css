@@ -48,6 +48,7 @@
 }
 .sub-block{
     position: absolute;
+    display: flex;
 
 }
 
