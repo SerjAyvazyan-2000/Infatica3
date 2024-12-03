@@ -386,10 +386,11 @@
 .service-advantages {
     gap: 16px;
     flex: 1 1 auto;
-    justify-content: space-between;
 
 }
-
+.advantage-text{
+    padding-bottom: 28px;
+}
 .icon-service-advantage {
     background-color: rgba(125, 125, 130, 1);
 }
