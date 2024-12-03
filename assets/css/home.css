@@ -393,11 +393,11 @@
 .icon-service-advantage {
     background-color: rgba(125, 125, 130, 1);
 }
-
-.icon-service {
-    font-size: 40px;
-
+.pricing-icon{
+    width: 40px;
+    height: 40px;
 }
+
 
 .service-advantage {
     gap: 5px;
@@ -1025,10 +1025,7 @@
         max-width: 330px;
 
     }
-    .icon-service {
-        font-size: 30px;
 
-    }
     .proxy-slides {
         margin-top: 32px;
     }

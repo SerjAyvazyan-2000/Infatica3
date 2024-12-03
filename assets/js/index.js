@@ -66,30 +66,62 @@ listItems.forEach(item => {
 })
 
 
-const menuLinks = document.querySelectorAll('.menu-list-link');
+// const menuLinks = document.querySelectorAll('.menu-list-item');
+//
+// menuLinks.forEach(link => {
+//     link.addEventListener('click', (e) => {
+//         e.preventDefault(); // Отключаем переход по ссылке
+//
+//         const linkDataVal = link.getAttribute('data-val');
+//         const targetSubBlock = document.querySelector(`.sub-block[data-val="${linkDataVal}"]`);
+//
+//         if (link.classList.contains('active')) {
+//             link.classList.remove('active');
+//             if (targetSubBlock) {
+//                 targetSubBlock.classList.remove('active');
+//             }
+//         } else {
+//             menuLinks.forEach(link => link.classList.remove('active'));
+//             document.querySelectorAll('.sub-block').forEach(block => block.classList.remove('active'));
+//
+//             link.classList.add('active');
+//             if (targetSubBlock) {
+//                 targetSubBlock.classList.add('active');
+//             }
+//         }
+//     });
+// });
+
+
+const menuLinks = document.querySelectorAll('.menu-list-item');
 
 menuLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault(); // Отключаем переход по ссылке
+        e.stopPropagation(); // Останавливаем всплытие события
 
-        const linkDataVal = link.getAttribute('data-val');
-        const targetSubBlock = document.querySelector(`.sub-block[data-val="${linkDataVal}"]`);
+        const isActive = link.classList.contains('active');
 
-        if (link.classList.contains('active')) {
-            link.classList.remove('active');
-            if (targetSubBlock) {
-                targetSubBlock.classList.remove('active');
-            }
-        } else {
-            menuLinks.forEach(link => link.classList.remove('active'));
-            document.querySelectorAll('.sub-block').forEach(block => block.classList.remove('active'));
-
-            link.classList.add('active');
-            if (targetSubBlock) {
-                targetSubBlock.classList.add('active');
-            }
+        // Сбрасываем активные классы у других элементов, только если текущий не активен
+        if (!isActive) {
+            menuLinks.forEach(otherLink => otherLink.classList.remove('active'));
         }
+
+        // Переключаем активный класс только для текущего элемента
+        link.classList.toggle('active');
     });
+});
+
+// Предотвращаем закрытие меню при клике на его содержимое (выпадашка)
+document.querySelectorAll('.sub-block').forEach(subBlock => {
+    subBlock.addEventListener('click', (e) => {
+        e.stopPropagation(); // Останавливаем всплытие события, чтобы меню не закрывалось
+    });
+});
+
+// Закрытие меню при клике вне
+document.addEventListener('click', () => {
+    menuLinks.forEach(link => link.classList.remove('active'));
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -178,48 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-const profilesSubData = document.querySelector('.profiles-sub-data');
-const profilesColumns = document.querySelector('.profiles-columns');
-const profilesSubBlock = document.querySelector('.profiles-sub-block');
-
-function handleResize() {
-    if (window.innerWidth < 992) {
-        if (!profilesColumns.contains(profilesSubData)) {
-            profilesColumns.appendChild(profilesSubData);
-        }
-    } else {
-        if (!profilesSubBlock.contains(profilesSubData)) {
-            profilesSubBlock.appendChild(profilesSubData);
-        }
-    }
-}
-
-window.addEventListener('resize', handleResize);
-
-handleResize();
 
 
-function toggleActiveHost(item) {
-    const allItems = document.querySelectorAll('.menu-list-item');
 
-    allItems.forEach(otherItem => {
-        if (otherItem !== item) {
-            otherItem.classList.remove('active');
-        }
-    });
 
-    item.classList.toggle('active');
-}
 
-document.querySelectorAll('.menu-list-item').forEach(item => {
-    item.addEventListener('click', (event) => {
-        event.stopPropagation();
-        toggleActiveHost(item);
-    });
-});
-
-document.addEventListener('click', (event) => {
-    document.querySelectorAll('.menu-list-item.active').forEach(activeItem => {
-        activeItem.classList.remove('active');
-    });
-});

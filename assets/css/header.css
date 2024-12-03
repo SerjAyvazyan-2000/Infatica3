@@ -1,6 +1,6 @@
 
 .header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 20px;
@@ -102,22 +102,22 @@
 }
 
 .pricing-sub-block {
-    min-width: 846px;
+    min-width: 980px;
     border-radius: 16px;
-    padding: 25px 0 36px 0;
+    padding: 38px 30px;
     background: white;
     box-shadow: 0px 25px 50px -12px rgba(16, 24, 40, 0.25);
-    gap: 40px;
     opacity: 0;
     top: 50px;
     visibility: hidden;
     transition: .3s;
     transform: translateX(-40%);
     z-index: 1;
-
+    align-items: flex-start;
+    gap: 40px;
+    display: flex;
 
 }
-
 
 .menu-list-item {
     position: relative;
@@ -144,13 +144,14 @@
 
 }
 
-.pricing-polygon{
+.pricing-polygon {
     opacity: 0;
     visibility: hidden;
     top: 35px;
     left: 46px;
     transition: .3s;
 }
+
 .menu-list-item.active .pricing-polygon {
     opacity: 1;
     visibility: visible;
@@ -184,10 +185,11 @@
     visibility: visible;
 }
 
-.menu-list-item.active .locations-sub-block{
+.menu-list-item.active .locations-sub-block {
     opacity: 1;
     visibility: visible;
 }
+
 .menu-list-item.active .location-polygon {
     opacity: 1;
     visibility: visible;
@@ -236,12 +238,17 @@
 
 }
 
+.pricing-proxy-network {
+    max-width: 420px;
+    width: 100%;
+    margin-top: 5px;
+}
+
 .proxy-header-title {
     max-width: 358px;
     width: 100%;
     border-bottom: 1px solid #F5F5F5;
     padding-bottom: 20px;
-    margin: 0 0 0 30px;
 
 }
 
@@ -362,10 +369,6 @@
     background: rgba(207, 47, 47, 1)
 }
 
-.data-services-icon {
-    padding: 8px;
-    border-radius: 50%;
-}
 
 .icon-green {
     background: rgba(52, 204, 169, 0.06);
@@ -412,14 +415,13 @@
 }
 
 .pricing-new {
-    max-width: 358px;
+    max-width: 404px;
     width: 100%;
 }
 
 .new-service-item {
     gap: 20px;
     padding: 14px 0;
-    margin-top: 12px;
     transition: .3s;
 }
 
@@ -455,13 +457,20 @@
 }
 
 .pricing-item-content {
-    max-width: 358px;
-    padding-right: 30px;
+    max-width: 404px;
+    width: 100%;
 }
 
 .by-company {
     margin-top: 25px;
     padding-left: 70px;
+}
+
+.proxy-types {
+    padding-left: 70px;
+    margin-top: 24px;
+    min-width: 460px;
+    width: 100%;
 }
 
 .profiles-padding {
@@ -505,7 +514,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.15px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .company-item span {
@@ -517,14 +526,20 @@
 }
 
 .company-item {
-    gap: 10px;
+    gap: 5px;
 
 }
 
+.company-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
 
 .profiles-sub-block {
-    min-width: 1354px;
+    min-width: 666px;
     width: 100%;
+    min-height: 473px;
     gap: 40px;
     background: white;
     box-shadow: 0px 25px 50px -12px rgba(16, 24, 40, 0.25);
@@ -534,10 +549,8 @@
     visibility: hidden;
     display: flex;
     transition: .3s;
-    padding: 32px 30px 40px 0;
-    min-height: 635px;
+    padding: 38px 30px;
     height: 100%;
-    overflow: scroll;
     left: 50%;
     transform: translate(-47%);
 
@@ -566,6 +579,15 @@
 
 }
 
+.data-services-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.data-services-icon img {
+    max-width: unset;
+}
+
 .profiles-column-title {
     color: #7D7D82;
     font-size: 13px;
@@ -575,7 +597,6 @@
     letter-spacing: 1.3px;
     text-transform: uppercase;
     padding-bottom: 20px;
-    margin: 0 0 0 30px;
     border-bottom: 1px solid #F5F5F5;
 
 }
@@ -595,7 +616,7 @@
 .profiles-service-item {
     max-width: 360px;
     border-radius: 6px;
-    padding: 14px 0;
+    padding: 8px;
     transition: .3s;
 }
 
@@ -655,7 +676,7 @@
 
 .company-sub-block {
     padding: 38px 30px;
-    min-width: 340px;
+    min-width: 250px;
     border-radius: 16px;
     width: 100%;
     background: #FFF;
@@ -747,7 +768,7 @@
 }
 
 .locations-sub-block {
-    min-width: 418px;
+    min-width: 200px;
     padding: 38px 30px;
     width: 100%;
     background: #FFF;
@@ -791,7 +812,6 @@
 
 .locations-sub-list {
     gap: 8px;
-    margin-top: 12px;
     max-height: 0;
     transition: .3s;
     opacity: 0;
@@ -802,6 +822,8 @@
     max-height: 500px;
     opacity: 1;
     visibility: visible;
+    margin-top: 12px;
+
 }
 
 .locations-list-item.active .icon-arrow-down {
@@ -836,22 +858,25 @@
 }
 
 @media (max-width: 1400px) {
-    .profiles-sub-block {
-        min-width: 1100px;
+    .pricing-sub-block {
+
+        transform: translateX(-30%);
+
+
     }
+
 }
 
 @media (max-width: 1200px) {
-    .pricing-sub-block {
-        transform: translateX(-30%);
-    }
 
     .header-body {
         gap: 10px;
     }
+
     .menu-list {
         gap: 7px;
     }
+
     .start-btn-desktop {
         display: none;
     }
@@ -870,29 +895,25 @@
 
     }
 
-    .profiles-columns {
-        flex-wrap: wrap;
-    }
-
-    .profiles-sub-block {
-        min-width: 900px;
-    }
 
 }
 
 @media (max-width: 992px) {
 
     .menu {
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 0;
-        padding: 0 35px;
+        padding: 0 35px 40px 0 ;
         background: white;
         width: 100%;
         overflow: auto;
-        height: 100%;
         transition: .3s;
 
+    }
+
+    .pricing-item-content {
+        max-width: 100%;
     }
 
     .menu.active {
@@ -1040,13 +1061,8 @@
 
     .profiles-column-title {
         color: #434396;
-        margin: 0 0 0 20px
     }
 
-
-    .profiles-padding {
-        padding: 0;
-    }
 
     .burger.active::after {
         transform: rotate(45deg);
@@ -1078,6 +1094,12 @@
         max-width: 232px;
     }
 
+    .pricing-sub-block {
+        padding: 20px 0;
+
+
+    }
+
     .locations-sub-block {
         padding: 24px 20px;
     }
@@ -1086,6 +1108,23 @@
         color: #434396;
 
     }
+
+    .pricing-new {
+        margin-top: 40px;
+    }
+
+    .proxy-types {
+        padding-left: 0;
+    }
+
+    .by-company {
+        padding-left: 0;
+    }
+
+    .pricing-proxy-network {
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1093,13 +1132,51 @@
         padding: 8px 16px;
     }
 
+    .profiles-columns {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 576px) {
 
     .menu.active {
-        padding: 0 30px;
+        padding: 0 16px 40px 16px;
+        overflow: hidden;
 
+    }
+
+    .pricing-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-home {
+        flex: 0 0 40px;
+    }
+
+    .pricing-icon img {
+        max-width: unset;
+    }
+
+    .new-service-icon img {
+        max-width: unset;
+    }
+
+    .icon-phone {
+        flex: 0 0 40px;
+
+    }
+
+    .icon-service {
+        flex: 0 0 40px;
+
+    }
+    .company-list{
+        flex-direction: column;
+    }
+
+    .icon-service3 {
+        flex: 0 0 40px;
     }
 
     .profiles-sub-data {
@@ -1111,10 +1188,6 @@
     }
 
 
-    .service-item-content {
-        margin: 0;
-    }
-
     .header-logo-mobile {
         display: block;
     }
@@ -1123,9 +1196,6 @@
         display: none;
     }
 
-    .proxy-header-title {
-        margin: 0;
-    }
 
     .pricing-item-content {
         padding-right: 0;
