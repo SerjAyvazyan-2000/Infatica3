@@ -213,28 +213,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-function equalizeServiceAdvantages() {
-    const swiperSlides = document.querySelectorAll('.swiper-slide'); // Находим все слайды
-
-    swiperSlides.forEach(slide => {
-        const advantageBlocks = slide.querySelectorAll('.service-advantage-text'); // Находим все текстовые блоки
-        let maxHeight = 0;
-
-        // Сбрасываем высоту и находим максимальную
-        advantageBlocks.forEach(block => {
-            block.style.height = 'auto'; // Сбрасываем стиль высоты перед расчетом
-            maxHeight = Math.max(maxHeight, block.offsetHeight);
-        });
-
-        // Устанавливаем максимальную высоту для всех блоков
-        advantageBlocks.forEach(block => {
-            block.style.height = `${maxHeight}px`;
-        });
-    });
-}
-
-// Вызываем функцию после загрузки страницы и инициализации Swiper
-document.addEventListener('DOMContentLoaded', equalizeServiceAdvantages);
-
-// Пересчёт высот при изменении окна
-window.addEventListener('resize', equalizeServiceAdvantages);
+// function equalizeServiceAdvantages() {
+//     const swiperSlides = document.querySelectorAll('.swiper-slide'); // Находим все слайды
+//
+//     swiperSlides.forEach(slide => {
+//         const advantageBlocks = slide.querySelectorAll('.service-advantage-text'); // Находим все текстовые блоки
+//         let maxHeight = 0;
+//
+//         // Сбрасываем высоту и находим максимальную
+//         advantageBlocks.forEach(block => {
+//             block.style.height = 'auto'; // Сбрасываем стиль высоты перед расчетом
+//             maxHeight = Math.max(maxHeight, block.offsetHeight);
+//         });
+//
+//         // Устанавливаем максимальную высоту для всех блоков
+//         advantageBlocks.forEach(block => {
+//             block.style.height = `${maxHeight}px`;
+//         });
+//     });
+// }
+//
+// // Вызываем функцию после загрузки страницы и инициализации Swiper
+// document.addEventListener('DOMContentLoaded', equalizeServiceAdvantages);
+//
+// // Пересчёт высот при изменении окна
+// window.addEventListener('resize', equalizeServiceAdvantages);

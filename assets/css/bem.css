@@ -1,5 +1,4 @@
 
-
 .big-container {
     max-width: 1920px;
     width: 100%;
@@ -26,33 +25,40 @@
     border: 1px solid #434396;
 
 }
-.btn-primary{
+
+.btn-primary {
     transition: .3s;
-    background:  #434396;
+    background: #434396;
     color: white;
     border: 1px solid transparent;
 
 }
-.btn-border{
+
+.btn-border {
     border-radius: 6px;
     border: 1px solid #434396;
-    color:  #434396;
+    color: #434396;
     transition: .3s;
 
 }
-.btn-border:hover{
-    background:  #434396;
+
+.btn-border:hover {
+    background: #434396;
     color: white;
 
 
 }
-.sub-block{
-    position: absolute;
 
+.sub-block {
+    position: absolute;
+    overflow-y: auto;
+    max-height: 80vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.sub-header-title{
-    color:  #7D7D82;
+.sub-header-title {
+    color: #7D7D82;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -60,8 +66,9 @@
     letter-spacing: 1.3px;
 
 }
-.sub-header-new{
-    color:  #CF2F2F;
+
+.sub-header-new {
+    color: #CF2F2F;
     font-size: 13px;
     font-weight: 700;
     line-height: normal;
@@ -69,11 +76,13 @@
 
 
 }
-.services-list{
-     margin-top: 12px;
+
+.services-list {
+    margin-top: 12px;
     gap: 16px;
 }
-.service-item-title{
+
+.service-item-title {
     color: #1C1C20;
     font-size: 15px;
     font-style: normal;
@@ -82,7 +91,8 @@
     letter-spacing: 0.15px;
     text-transform: capitalize;
 }
-.service-blue-title{
+
+.service-blue-title {
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -92,8 +102,9 @@
 
 
 }
-.service-item-clue{
-     padding: 3px 5px;
+
+.service-item-clue {
+    padding: 3px 5px;
     border-radius: 2px;
     color: #FF4B55;
     text-align: center;
@@ -103,13 +114,14 @@
     letter-spacing: 0.12px;
     background-color: rgba(255, 75, 85, 0.08);
 }
-.service-item-content{
+
+.service-item-content {
     gap: 20px;
 
 
 }
 
-.pricing-service-item{
+.pricing-service-item {
     max-width: 418px;
     border-radius: 6px;
     padding: 8px;
@@ -117,11 +129,11 @@
 
 }
 
-.pricing-service-item:hover{
+.pricing-service-item:hover {
     background: rgba(243, 244, 248, 0.50);
 }
 
-.service-item-text{
+.service-item-text {
     color: #7D7D82;
     font-size: 13px;
     font-style: normal;
@@ -137,26 +149,33 @@
         color: #434396;
 
     }
-    .sub-block{
+
+    .sub-block {
         display: none;
 
     }
-    .menu-list-item.active .sub-block{
-        display: block;
+
+    .menu-list-item.active .sub-block {
+        display: flex;
+        position: initial;
 
     }
-    .pricing-service-item{
-         padding: 11px 0 ;
+
+    .pricing-service-item {
+        padding: 11px 0;
         max-width: 100%;
         width: 100%;
     }
-    .service-item-content{
+
+    .service-item-content {
         gap: 20px;
     }
-    .services-list{
+
+    .services-list {
         gap: 40px;
     }
-    .service-item-text{
+
+    .service-item-text {
         max-width: 100%;
     }
 
@@ -164,7 +183,6 @@
 }
 
 @media (max-width: 576px) {
-
 
 
 }

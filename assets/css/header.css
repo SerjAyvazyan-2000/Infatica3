@@ -1,6 +1,6 @@
 
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 20px;
@@ -26,7 +26,11 @@
     z-index: 1;
 }
 
-
+.location-arrow-down{
+    font-size: 22px;
+    background: #1C1C20;
+    transition: .3s;
+}
 .icon-arrow-down {
     font-size: 22px;
     background: #1C1C20;
@@ -793,6 +797,10 @@
     cursor: pointer;
 }
 
+.locations-list-item.active .location-arrow-down {
+    transform: rotate(180deg);
+}
+
 .locations-list-link span {
     color: #1C1C20;
     font-size: 15px;
@@ -901,14 +909,15 @@
 @media (max-width: 992px) {
 
     .menu {
-        position: absolute;
+        position: fixed;
         left: -100%;
         top: 0;
-        padding: 0 35px 40px 0 ;
+        padding:  35px 40px 0;
         background: white;
         width: 100%;
         overflow: auto;
         transition: .3s;
+        height: 100%;
 
     }
 
@@ -932,7 +941,6 @@
         flex-direction: column;
         transform: translate(0);
         min-width: 100%;
-        max-height: 0;
         box-shadow: none;
 
     }
@@ -951,13 +959,6 @@
 
     }
 
-    .sub-block.active {
-        opacity: 1;
-        visibility: visible;
-        max-height: 10000px;
-        position: initial;
-
-    }
 
     .menu-list-item::before {
         display: none;
@@ -1087,7 +1088,6 @@
 
     .companies-list {
         margin-top: 0;
-        gap: 10px;
     }
 
     .companies-list a {
@@ -1095,7 +1095,7 @@
     }
 
     .pricing-sub-block {
-        padding: 20px 0;
+        padding: 24px 0;
 
 
     }
@@ -1141,7 +1141,6 @@
 
     .menu.active {
         padding: 0 16px 40px 16px;
-        overflow: hidden;
 
     }
 
@@ -1149,11 +1148,16 @@
         width: 30px;
         height: 30px;
     }
+    .profiles-sub-block {
+        padding: 24px 0 40px 0;
 
+    }
     .icon-home {
         flex: 0 0 40px;
     }
-
+    .company-sub-block {
+        padding: 24px 0 40px 0 ;
+    }
     .pricing-icon img {
         max-width: unset;
     }
@@ -1171,7 +1175,8 @@
         flex: 0 0 40px;
 
     }
-    .company-list{
+
+    .company-list {
         flex-direction: column;
     }
 
@@ -1208,7 +1213,9 @@
     .pricing-sub-title {
         margin: 0;
     }
-
+    .locations-sub-block {
+        padding: 24px 0;
+    }
     .by-company {
         padding-left: 0;
     }

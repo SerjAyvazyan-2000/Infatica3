@@ -388,8 +388,9 @@
     flex: 1 1 auto;
 
 }
-.advantage-text{
-    padding-bottom: 28px;
+.service-hide-text{
+    opacity: 0;
+    visibility: hidden;
 }
 .icon-service-advantage {
     background-color: rgba(125, 125, 130, 1);
@@ -1035,6 +1036,9 @@
         flex-direction: column;
         gap: 16px;
         width: 100%;
+    }
+    .service-advantage-text{
+        font-size: 13px;
     }
     .hero-clue {
         font-size: 14px;

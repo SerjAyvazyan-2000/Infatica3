@@ -15,6 +15,11 @@
     mask-image: url(arrowDown.svg);
     -webkit-mask-image: url(arrowDown.svg);
 }
+.location-arrow-down{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+
 .icon-arrow-left{
     mask-image: url(arrowLeft.svg);
     -webkit-mask-image: url(arrowLeft.svg);
