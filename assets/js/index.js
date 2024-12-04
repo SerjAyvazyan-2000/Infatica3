@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 slide.classList.remove('active');
 
             }
-            if(window.innerWidth <= 768){
+            if(window.innerWidth <= 1025){
                 slide.classList.add('active');
 
             }
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 item.classList.remove('active');
             }
-            if(window.innerWidth <= 768){
+            if(window.innerWidth <= 1025){
                 item.classList.remove('active');
             }
         });
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (catalogItems.length > 0) {
         showContent(catalogItems[0].dataset.val);
     }
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1025) {
         showContent(catalogItems[0].dataset.val);
     }
 

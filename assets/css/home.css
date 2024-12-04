@@ -108,7 +108,7 @@
     text-align: center;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 28px;
     border-radius: 4px;
     border: 1px solid #434396;
@@ -123,7 +123,7 @@
     text-align: center;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 28px;
     max-width: 280px;
     width: 100%;
@@ -812,6 +812,9 @@
         gap: 32px;
         width: 100%;
     }
+    .services-mobile-clue {
+        display: block;
+    }
 
     .hero-title {
         font-size: 32px;
@@ -833,7 +836,9 @@
         font-size: 20px;
         margin-top: 8px;
     }
-
+    .datasets-slides {
+        display: block !important;
+    }
     .hero-bottom-text {
         font-size: 18px;
         font-weight: 500;
@@ -851,10 +856,24 @@
         background-size: cover;
         background-position: center;
     }
+    .services-catalog {
+        display: none;
+    }
 
     .header-logo-desctop {
         max-width: 238px;
     }
+    .swiper {
+        overflow: unset;
+    }
+    .services-contents {
+        gap: 56px;
+    }
+
+    .scraping-slides {
+        margin-top: 0
+    }
+
 
 }
 
@@ -867,7 +886,24 @@
         margin-left: -5px;
 
     }
+    .services-mobile-clue h3 {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
 
+
+    .services-mobile-clue p {
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 1);
+        font-style: normal;
+        opacity: .7;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
     .services-body::before {
         left: 20px;
         width: 100%;
@@ -895,19 +931,14 @@
 @media (max-width: 768px) {
 
 
-    .services-mobile-clue {
-        display: block;
-    }
+
 
     .services-section {
         background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
 
     }
 
-    .swiper {
-        overflow: unset;
-    }
-
+   =
     .scraping-section {
         background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
     }
@@ -926,9 +957,7 @@
         margin-top: 40px;
     }
 
-    .datasets-slides {
-        display: block !important;
-    }
+
 
     .services-section {
         padding: 45px 0 93px 0;
@@ -948,27 +977,18 @@
         line-height: normal;
     }
 
-    .services-catalog {
-        display: none;
-    }
+
 
     .datasets-catalog.active {
         display: none;
     }
 
-    .scraping-slides {
-        margin-top: 0
-    }
 
 
     .datasets-catalog.active {
         margin-top: 0;
     }
 
-
-    .services-contents {
-        gap: 56px;
-    }
 
 
     .services-item {
@@ -994,24 +1014,7 @@
     }
 
 
-    .services-mobile-clue h3 {
-        color: #FFF;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
 
-
-    .services-mobile-clue p {
-        margin-top: 8px;
-        color: rgba(255, 255, 255, 1);
-        font-style: normal;
-        opacity: .7;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%;
-    }
 
 }
 

@@ -15,6 +15,10 @@ const swiper = new Swiper('.proxy-swiper', {
             slidesPerView: 1.2,
             spaceBetween: 16
         },
+        400: {
+            slidesPerView: 1.3,
+            spaceBetween: 16
+        },
         530: {
             slidesPerView: 1.8,
             spaceBetween: 16
@@ -28,9 +32,14 @@ const swiper = new Swiper('.proxy-swiper', {
             spaceBetween: 34,
 
         },
+        1024: {
+            slidesPerView: 3.5,
+            spaceBetween: 10,
 
-        900: {
-            slidesPerView: 3,
+        },
+
+        1165: {
+            slidesPerView: 4,
             spaceBetween: 16
 
         },
@@ -44,47 +53,6 @@ const swiper = new Swiper('.proxy-swiper', {
 
 
 
-// const swiperScarping = new Swiper('.scraping-swiper', {
-//     slidesPerView: 3,
-//     spaceBetween: 32,
-//     // loop:true,
-//
-//     pagination: {
-//         el: '.scraping-pagination',
-//         clickable: true,
-//     },
-//     navigation: {
-//         nextEl: '.-convert-swiper-next',
-//         prevEl: '.convert-swiper-prev',
-//     },
-//     breakpoints: {
-//         320: {
-//             slidesPerView: 1.2,
-//             spaceBetween: 16
-//         },
-//         567: {
-//             slidesPerView: 2,
-//
-//         },
-//         700: {
-//             slidesPerView:2.4 ,
-//             spaceBetween: 16,
-//
-//         },
-//
-//
-//         900: {
-//             slidesPerView: 2,
-//             spaceBetween: 16,
-//
-//         },
-//         1200: {
-//             slidesPerView: 3,
-//         },
-//     }
-//
-//
-// });
 
 
 let swiperScarping;
@@ -120,6 +88,7 @@ function initSwiper() {
                 slidesPerView: isSmallScreen ? 1.2 : 2,
                 spaceBetween: 16,
             },
+
             1200: {
                 slidesPerView: 3,
             },
@@ -154,6 +123,10 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
     breakpoints: {
         320: {
             slidesPerView: 1.2,
+            spaceBetween: 16
+        },
+        400: {
+            slidesPerView: 1.3,
             spaceBetween: 16
         },
         567: {
