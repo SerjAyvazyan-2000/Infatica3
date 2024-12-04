@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.proxy-swiper', {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -17,24 +16,25 @@ const swiper = new Swiper('.proxy-swiper', {
         },
         400: {
             slidesPerView: 1.3,
-            spaceBetween: 16
+            spaceBetween: 10
         },
         530: {
             slidesPerView: 1.8,
             spaceBetween: 16
         },
-        567: {
-            slidesPerView: 2,
+
+        660: {
+            slidesPerView: 2.3,
 
         },
-        730: {
-            slidesPerView: 2.7,
-            spaceBetween: 34,
+
+        760: {
+            slidesPerView: 2.6,
+            spaceBetween: 10
 
         },
-        1024: {
-            slidesPerView: 3.5,
-            spaceBetween: 10,
+        1025: {
+            slidesPerView: 3.6,
 
         },
 
@@ -50,9 +50,6 @@ const swiper = new Swiper('.proxy-swiper', {
 
 
 });
-
-
-
 
 
 let swiperScarping;
@@ -127,20 +124,35 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
         },
         400: {
             slidesPerView: 1.3,
+            spaceBetween: 10
+        },
+        530: {
+            slidesPerView: 1.8,
             spaceBetween: 16
         },
+
         567: {
             slidesPerView: 2,
 
         },
-        700: {
-            slidesPerView:2.7 ,
-            spaceBetween: 16,
+        730: {
+            slidesPerView: 2.4,
+            spaceBetween: 10
+
+        },
+        768: {
+            slidesPerView: 2.7,
+            spaceBetween: 10
 
         },
 
-        900: {
-            slidesPerView: 3,
+        1025: {
+            slidesPerView: 3.6,
+
+        },
+
+        1165: {
+            slidesPerView: 4,
             spaceBetween: 16
 
         },

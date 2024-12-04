@@ -108,7 +108,7 @@
     text-align: center;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
     border-radius: 4px;
     border: 1px solid #434396;
@@ -123,7 +123,7 @@
     text-align: center;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
     max-width: 280px;
     width: 100%;
@@ -344,12 +344,11 @@
 }
 
 .services-price span {
-    color: #0B5398;
+    color: #434396;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-
 }
 
 .services-clue {
@@ -388,17 +387,14 @@
     flex: 1 1 auto;
 
 }
-
-.service-hide-text {
+.service-hide-text{
     opacity: 0;
     visibility: hidden;
 }
-
 .icon-service-advantage {
     background-color: rgba(125, 125, 130, 1);
 }
-
-.pricing-icon {
+.pricing-icon{
     width: 40px;
     height: 40px;
 }
@@ -524,8 +520,7 @@
     transition: .3s;
 
 }
-
-.scraping-small-btn {
+.scraping-small-btn{
     border-radius: 4px;
     padding: 12px 28px;
     max-width: 220px;
@@ -541,19 +536,16 @@
     background: #0B5398;
     transition: .3s;
 }
-
-.scraping-small-btn:hover {
+.scraping-small-btn:hover{
     background: white;
     color: #434396;
     border: 1px solid #434396;
 }
-
-.scraping-btn:hover {
+.scraping-btn:hover{
     background: white;
     color: #434396;
     border: 1px solid #434396;
 }
-
 .scarping-item-fon {
     width: 300px;
     height: 440px;
@@ -573,11 +565,9 @@
     width: auto;
     transition: all 0.3s ease;
 }
-
 .scraping-swiper .swiper-slide {
     flex-shrink: 0 !important;
 }
-
 .scraping-swiper .swiper-slide.big-slide {
     min-width: 569px !important;
     flex-shrink: 0 !important;
@@ -697,6 +687,7 @@
 }
 
 .datasets-text {
+    margin-top: 21px;
     color: #171717;
     font-size: 14px;
     font-style: normal;
@@ -716,12 +707,10 @@
     background: rgba(249, 250, 251, 1);
     margin-left: 20px;
 }
-
-.datasets-icon {
+.datasets-icon{
     margin-left: 20px;
 
 }
-
 .icon-sotial2 {
     font-size: 25px;
     background: rgba(249, 250, 251, 1);
@@ -755,7 +744,7 @@
 }
 
 .datasets-padding {
-    margin: 21px 24px 0;
+    padding: 0 24px;
 }
 
 .datasets-tools-padding {
@@ -781,6 +770,8 @@
 }
 
 
+
+
 @media (max-width: 1400px) {
     .services-section::after {
         width: 100%;
@@ -798,85 +789,6 @@
 
 }
 
-@media (max-width: 1025px) {
-    .hero-text {
-        max-width: 700px;
-    }
-
-    .hero-section {
-        min-height: 532px;
-    }
-
-    .hero-content-tools {
-        margin-top: 64px;
-        gap: 32px;
-        width: 100%;
-    }
-    .services-mobile-clue {
-        display: block;
-    }
-
-    .hero-title {
-        font-size: 32px;
-        line-height: normal;
-        letter-spacing: -0.32px;
-        margin-top: 34px;
-    }
-
-    .hero-title span {
-        font-size: 32px;
-        line-height: normal;
-        letter-spacing: -0.32px;
-    }
-
-    .hero-text {
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-        font-size: 20px;
-        margin-top: 8px;
-    }
-    .datasets-slides {
-        display: block !important;
-    }
-    .hero-bottom-text {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-        margin-top: 80px;
-    }
-
-    .hero-content {
-        padding-top: 106px;
-    }
-
-    .hero-section::after {
-        background: url("/assets/images/hero-bgTablet.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .services-catalog {
-        display: none;
-    }
-
-    .header-logo-desctop {
-        max-width: 238px;
-    }
-    .swiper {
-        overflow: unset;
-    }
-    .services-contents {
-        gap: 56px;
-    }
-
-    .scraping-slides {
-        margin-top: 0
-    }
-
-
-}
-
 @media (max-width: 1200px) {
     .scraping-pagination {
         position: initial;
@@ -886,6 +798,22 @@
         margin-left: -5px;
 
     }
+
+    .services-body::before {
+        left: 20px;
+        width: 100%;
+        transform: rotate(0);
+    }
+
+}
+@media (max-width: 1025px) {
+
+    .services-mobile-clue {
+        display: block;
+    }
+    .swiper {
+        overflow: unset;
+    }
     .services-mobile-clue h3 {
         color: #FFF;
         font-size: 24px;
@@ -893,8 +821,19 @@
         font-weight: 600;
         line-height: normal;
     }
+    .services-section{
+        background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
 
-
+    }
+    .hero-title {
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: -0.32px;
+        margin-top: 34px;
+    }
+    .services-catalog {
+        display: none;
+    }
     .services-mobile-clue p {
         margin-top: 8px;
         color: rgba(255, 255, 255, 1);
@@ -904,14 +843,52 @@
         font-weight: 400;
         line-height: 150%;
     }
-    .services-body::before {
-        left: 20px;
-        width: 100%;
-        transform: rotate(0);
+    .hero-title span {
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: -0.32px;
+    }
+    .hero-text {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 20px;
+        margin-top: 8px;
     }
 
-}
+    .hero-content-tools {
+        margin-top: 64px;
+        gap: 32px;
+        width: 100%;
+    }
+    .header-logo-desctop{
+        max-width: 238px;
+    }
+    .hero-section{
+        min-height: 532px;
+    }
+    .hero-section::after {
+        background: url("/assets/images/hero-bgTablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
+    .datasets-slides {
+        display: block !important;
+    }
+    .hero-bottom-text{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 80px;
+    }
+    .hero-content {
+        padding-top: 106px;
+    }
+
+
+}
 @media (max-width: 992px) {
     .datasets-item {
 
@@ -938,7 +915,8 @@
 
     }
 
-   =
+
+
     .scraping-section {
         background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
     }
@@ -983,6 +961,10 @@
         display: none;
     }
 
+    .scraping-slides {
+        margin-top: 0
+    }
+
 
 
     .datasets-catalog.active {
@@ -990,13 +972,16 @@
     }
 
 
-
-    .services-item {
-        min-width: 268px;
-        min-height: 440px;
-        padding: 22px 20px;
+    .services-contents {
+        gap: 56px;
     }
 
+
+    .services-item{
+        min-width: 268px;
+        min-height: 440px;
+        padding:18px 20px;
+    }
 
     .scraping-item {
         min-height: 440px;
@@ -1009,9 +994,8 @@
     }
 
 
-    .hero-section {
-        min-height: 532px;
-    }
+
+
 
 
 
@@ -1023,16 +1007,13 @@
         background: url("/assets/images/heroMobileBg.png");
         background-position: center;
     }
-
     .hero-content {
         padding-top: 128px;
     }
-
     .services-title {
         font-size: 24px;
         line-height: normal;
     }
-
     .services-section {
         padding: 40px 0 93px 0;
     }
@@ -1042,30 +1023,25 @@
         font-style: normal;
         line-height: 21px;
     }
-
     .services-mobile-clue h3 {
         font-size: 18px;
         line-height: normal;
     }
-
     .hero-text {
         font-size: 16px;
         line-height: 150%;
         margin-top: 24px;
         max-width: 330px;
     }
-
     .hero-title {
         font-size: 28px;
         margin-top: 8px;
         line-height: 150%;
     }
-
     .hero-title span {
         font-size: 28px;
         line-height: 150%;
     }
-
     .hero-btn {
         max-width: 330px;
 
@@ -1074,39 +1050,34 @@
     .proxy-slides {
         margin-top: 32px;
     }
-
     .hero-content-tools {
         margin-top: 56px;
         flex-direction: column;
         gap: 16px;
         width: 100%;
     }
-
-    .service-advantage-text {
+    .service-advantage-text{
         font-size: 13px;
     }
-
     .hero-clue {
         font-size: 14px;
         line-height: 24px;
     }
-
     .hero-bottom-text {
         display: none;
     }
-
     .services-mobile-clue p {
         max-width: 330px;
     }
-
     .datasets-pagination {
 
         margin-top: 23px;
 
 
     }
-
     .hero-section {
         min-height: 588px;
     }
+
+
 }

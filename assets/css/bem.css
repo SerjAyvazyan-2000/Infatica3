@@ -19,6 +19,8 @@
     padding: 0 15px;
 }
 
+
+
 .btn-primary:hover {
     background: white;
     color: #434396;
@@ -184,5 +186,23 @@
 
 @media (max-width: 576px) {
 
+
+}
+@media (max-width: 1025px) {
+    .container {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+}
+@media (max-width: 415px) {
+    .container {
+        max-width: 390px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 
 }
