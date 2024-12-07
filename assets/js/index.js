@@ -93,21 +93,19 @@ listItems.forEach(item => {
 // });
 
 
-const menuLinks = document.querySelectorAll('.menu-list-item');
+const menuLinks = document.querySelectorAll('.menu-list-item ');
 
 menuLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Отключаем переход по ссылке
-        e.stopPropagation(); // Останавливаем всплытие события
+        e.preventDefault();
+        e.stopPropagation();
 
         const isActive = link.classList.contains('active');
 
-        // Сбрасываем активные классы у других элементов, только если текущий не активен
         if (!isActive) {
             menuLinks.forEach(otherLink => otherLink.classList.remove('active'));
         }
 
-        // Переключаем активный класс только для текущего элемента
         link.classList.toggle('active');
     });
 });

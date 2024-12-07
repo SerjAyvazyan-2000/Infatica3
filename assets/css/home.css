@@ -329,6 +329,11 @@
     border-bottom: 1px solid #E5E5E5;
 
 }
+.scarping-price{
+    gap: 4px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E5E5E5;
+}
 
 .service-advantage {
     padding-bottom: 16px;
@@ -342,7 +347,20 @@
     font-weight: 400;
     line-height: 24px;
 }
-
+.scarping-price p{
+    color: #1C1C20;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.scarping-price span{
+    color: #0B5398;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
 .services-price span {
     color: #434396;
     font-size: 16px;
@@ -744,11 +762,11 @@
 }
 
 .datasets-padding {
-    padding: 0 24px;
+    margin: 21px 24px 0;
 }
 
 .datasets-tools-padding {
-    padding: 16px 24px 24px 24px;
+    padding: 16px 24px 29px 24px;
 }
 
 .proxy-slides {
