@@ -832,9 +832,10 @@
     }
 
     .services-body::before {
-        left: 20px;
-        width: 100%;
-        transform: rotate(0);
+        left: 450px;
+        width: 70%;
+        top: -420px;
+        transform: rotate(-34deg);
     }
 
 }
@@ -872,7 +873,14 @@
     .services-catalog {
         display: none;
     }
+    .services-section::before {
+        top: -200px;
 
+    }
+    .services-section::after{
+        top: -140px;
+
+    }
     .services-mobile-clue p {
         margin-top: 8px;
         color: rgba(255, 255, 255, 1);
@@ -917,7 +925,9 @@
         background-size: cover;
         background-position: center;
     }
-
+    .datasets-item{
+        padding: 26px 24px;
+    }
     .datasets-slides {
         display: block !important;
         margin-top: 74px;
