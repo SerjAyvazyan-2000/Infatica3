@@ -30,7 +30,7 @@ const swiper = new Swiper('.proxy-swiper', {
 
         760: {
             slidesPerView: 2.6,
-            spaceBetween: 10
+            spaceBetween: 22
 
         },
         1025: {
@@ -82,8 +82,10 @@ function initSwiper() {
                 spaceBetween: 16,
             },
             900: {
-                slidesPerView: isSmallScreen ? 1.2 : 2,
-                spaceBetween: 16,
+                slidesPerView: 2,
+
+                // slidesPerView: isSmallScreen ? 1.2 : 2,
+                spaceBetween: 10,
             },
 
             1200: {

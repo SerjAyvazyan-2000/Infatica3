@@ -145,10 +145,10 @@
     margin-top: 6px;
 
 }
-
-@media (max-width: 992px) {
-    .sub-header-title {
-        color: #434396;
+@media (max-width: 1025px) {
+    .menu-list-item.active .sub-block {
+        display: flex;
+        position: initial;
 
     }
 
@@ -157,11 +157,14 @@
 
     }
 
-    .menu-list-item.active .sub-block {
-        display: flex;
-        position: initial;
+}
+@media (max-width: 992px) {
+    .sub-header-title {
+        color: #434396;
 
     }
+
+
 
     .pricing-service-item {
         padding: 11px 0;
