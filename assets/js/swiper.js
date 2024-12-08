@@ -84,7 +84,6 @@ function initSwiper() {
             900: {
                 slidesPerView: 2,
 
-                // slidesPerView: isSmallScreen ? 1.2 : 2,
                 spaceBetween: 10,
             },
 
