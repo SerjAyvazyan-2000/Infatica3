@@ -329,7 +329,8 @@
     border-bottom: 1px solid #E5E5E5;
 
 }
-.scarping-price{
+
+.scarping-price {
     gap: 4px;
     padding-bottom: 16px;
     border-bottom: 1px solid #E5E5E5;
@@ -347,20 +348,23 @@
     font-weight: 400;
     line-height: 24px;
 }
-.scarping-price p{
+
+.scarping-price p {
     color: #1C1C20;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
-.scarping-price span{
+
+.scarping-price span {
     color: #0B5398;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
 }
+
 .services-price span {
     color: #434396;
     font-size: 16px;
@@ -405,14 +409,17 @@
     flex: 1 1 auto;
 
 }
-.service-hide-text{
+
+.service-hide-text {
     opacity: 0;
     visibility: hidden;
 }
+
 .icon-service-advantage {
     background-color: rgba(125, 125, 130, 1);
 }
-.pricing-icon{
+
+.pricing-icon {
     width: 40px;
     height: 40px;
 }
@@ -512,7 +519,7 @@
     color: #FFF;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     height: 40px;
     display: flex;
@@ -538,7 +545,8 @@
     transition: .3s;
 
 }
-.scraping-small-btn{
+
+.scraping-small-btn {
     border-radius: 4px;
     padding: 12px 28px;
     max-width: 220px;
@@ -554,16 +562,19 @@
     background: #0B5398;
     transition: .3s;
 }
-.scraping-small-btn:hover{
+
+.scraping-small-btn:hover {
     background: white;
     color: #434396;
     border: 1px solid #434396;
 }
-.scraping-btn:hover{
+
+.scraping-btn:hover {
     background: white;
     color: #434396;
     border: 1px solid #434396;
 }
+
 .scarping-item-fon {
     width: 300px;
     height: 440px;
@@ -583,9 +594,11 @@
     width: auto;
     transition: all 0.3s ease;
 }
+
 .scraping-swiper .swiper-slide {
     flex-shrink: 0 !important;
 }
+
 .scraping-swiper .swiper-slide.big-slide {
     min-width: 569px !important;
     flex-shrink: 0 !important;
@@ -725,10 +738,12 @@
     background: rgba(249, 250, 251, 1);
     margin-left: 20px;
 }
-.datasets-icon{
+
+.datasets-icon {
     margin-left: 20px;
 
 }
+
 .icon-sotial2 {
     font-size: 25px;
     background: rgba(249, 250, 251, 1);
@@ -788,8 +803,6 @@
 }
 
 
-
-
 @media (max-width: 1400px) {
     .services-section::after {
         width: 100%;
@@ -824,14 +837,17 @@
     }
 
 }
+
 @media (max-width: 1025px) {
 
     .services-mobile-clue {
         display: block;
     }
+
     .swiper {
         overflow: unset;
     }
+
     .services-mobile-clue h3 {
         color: #FFF;
         font-size: 24px;
@@ -839,19 +855,23 @@
         font-weight: 600;
         line-height: normal;
     }
-    .services-section{
+
+    .services-section {
         background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
 
     }
+
     .hero-title {
         font-size: 32px;
         line-height: normal;
         letter-spacing: -0.32px;
         margin-top: 34px;
     }
+
     .services-catalog {
         display: none;
     }
+
     .services-mobile-clue p {
         margin-top: 8px;
         color: rgba(255, 255, 255, 1);
@@ -861,11 +881,13 @@
         font-weight: 400;
         line-height: 150%;
     }
+
     .hero-title span {
         font-size: 32px;
         line-height: normal;
         letter-spacing: -0.32px;
     }
+
     .hero-text {
         font-style: normal;
         font-weight: 500;
@@ -879,12 +901,15 @@
         gap: 32px;
         width: 100%;
     }
-    .header-logo-desctop{
+
+    .header-logo-desctop {
         max-width: 238px;
     }
-    .hero-section{
+
+    .hero-section {
         min-height: 532px;
     }
+
     .hero-section::after {
         background: url("/assets/images/hero-bgTablet.png");
         background-repeat: no-repeat;
@@ -894,19 +919,23 @@
 
     .datasets-slides {
         display: block !important;
+        margin-top: 74px;
     }
-    .hero-bottom-text{
+
+    .hero-bottom-text {
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
         margin-top: 80px;
     }
+
     .hero-content {
         padding-top: 106px;
     }
 
 
 }
+
 @media (max-width: 992px) {
     .datasets-item {
 
@@ -926,13 +955,10 @@
 @media (max-width: 768px) {
 
 
-
-
     .services-section {
         background: linear-gradient(180deg, #00003A 0%, #083E72 50%, #510AB3 100%);
 
     }
-
 
 
     .scraping-section {
@@ -954,7 +980,6 @@
     }
 
 
-
     .services-section {
         padding: 45px 0 93px 0;
     }
@@ -974,7 +999,6 @@
     }
 
 
-
     .datasets-catalog.active {
         display: none;
     }
@@ -982,7 +1006,6 @@
     .scraping-slides {
         margin-top: 0
     }
-
 
 
     .datasets-catalog.active {
@@ -995,10 +1018,10 @@
     }
 
 
-    .services-item{
+    .services-item {
         min-width: 268px;
         min-height: 440px;
-        padding:18px 20px;
+        padding: 18px 20px;
     }
 
     .scraping-item {
@@ -1012,12 +1035,6 @@
     }
 
 
-
-
-
-
-
-
 }
 
 @media (max-width: 576px) {
@@ -1025,13 +1042,18 @@
         background: url("/assets/images/heroMobileBg.png");
         background-position: center;
     }
+
     .hero-content {
         padding-top: 128px;
+    }
+    .datasets-slides {
+        margin-top: 0;
     }
     .services-title {
         font-size: 24px;
         line-height: normal;
     }
+
     .services-section {
         padding: 40px 0 93px 0;
     }
@@ -1041,25 +1063,30 @@
         font-style: normal;
         line-height: 21px;
     }
+
     .services-mobile-clue h3 {
         font-size: 18px;
         line-height: normal;
     }
+
     .hero-text {
         font-size: 16px;
         line-height: 150%;
         margin-top: 24px;
         max-width: 330px;
     }
+
     .hero-title {
         font-size: 28px;
         margin-top: 8px;
         line-height: 150%;
     }
+
     .hero-title span {
         font-size: 28px;
         line-height: 150%;
     }
+
     .hero-btn {
         max-width: 330px;
 
@@ -1068,31 +1095,38 @@
     .proxy-slides {
         margin-top: 32px;
     }
+
     .hero-content-tools {
         margin-top: 56px;
         flex-direction: column;
         gap: 16px;
         width: 100%;
     }
-    .service-advantage-text{
+
+    .service-advantage-text {
         font-size: 13px;
     }
+
     .hero-clue {
         font-size: 14px;
         line-height: 24px;
     }
+
     .hero-bottom-text {
         display: none;
     }
+
     .services-mobile-clue p {
         max-width: 330px;
     }
+
     .datasets-pagination {
 
         margin-top: 23px;
 
 
     }
+
     .hero-section {
         min-height: 588px;
     }
