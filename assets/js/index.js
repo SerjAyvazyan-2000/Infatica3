@@ -84,14 +84,12 @@ menuLinks.forEach(link => {
     });
 });
 
-// Предотвращаем закрытие меню при клике на его содержимое (выпадашка)
 document.querySelectorAll('.sub-block').forEach(subBlock => {
     subBlock.addEventListener('click', (e) => {
         e.stopPropagation(); // Останавливаем всплытие события, чтобы меню не закрывалось
     });
 });
 
-// Закрытие меню при клике вне
 document.addEventListener('click', () => {
     menuLinks.forEach(link => link.classList.remove('active'));
 });
