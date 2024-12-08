@@ -86,7 +86,7 @@ menuLinks.forEach(link => {
 
 document.querySelectorAll('.sub-block').forEach(subBlock => {
     subBlock.addEventListener('click', (e) => {
-        e.stopPropagation(); // Останавливаем всплытие события, чтобы меню не закрывалось
+        e.stopPropagation();
     });
 });
 
