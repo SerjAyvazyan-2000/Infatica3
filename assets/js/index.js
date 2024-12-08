@@ -66,32 +66,6 @@ listItems.forEach(item => {
 })
 
 
-// const menuLinks = document.querySelectorAll('.menu-list-item');
-//
-// menuLinks.forEach(link => {
-//     link.addEventListener('click', (e) => {
-//         e.preventDefault(); // Отключаем переход по ссылке
-//
-//         const linkDataVal = link.getAttribute('data-val');
-//         const targetSubBlock = document.querySelector(`.sub-block[data-val="${linkDataVal}"]`);
-//
-//         if (link.classList.contains('active')) {
-//             link.classList.remove('active');
-//             if (targetSubBlock) {
-//                 targetSubBlock.classList.remove('active');
-//             }
-//         } else {
-//             menuLinks.forEach(link => link.classList.remove('active'));
-//             document.querySelectorAll('.sub-block').forEach(block => block.classList.remove('active'));
-//
-//             link.classList.add('active');
-//             if (targetSubBlock) {
-//                 targetSubBlock.classList.add('active');
-//             }
-//         }
-//     });
-// });
-
 
 const menuLinks = document.querySelectorAll('.menu-list-item ');
 
