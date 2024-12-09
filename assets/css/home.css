@@ -601,7 +601,7 @@
 }
 
 .scraping-swiper .swiper-slide.big-slide {
-    min-width: 569px !important;
+    min-width: 557px !important;
     flex-shrink: 0 !important;
 
 
@@ -670,7 +670,7 @@
 .scraping-item {
     border-radius: 24px;
     background: #F9FAFB;
-    min-width: 569px;
+    min-width: 557px;
     min-height: 444px;
     overflow: hidden;
 }

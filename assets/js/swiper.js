@@ -83,7 +83,6 @@ function initSwiper() {
             },
             900: {
                 slidesPerView: 2,
-
                 spaceBetween: 10,
             },
 
