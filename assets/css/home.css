@@ -831,6 +831,10 @@
     .services-catalog {
         display: none;
     }
+    .services-title {
+        font-size: 28px;
+        line-height: normal;
+    }
 
 
     .services-mobile-clue p {
@@ -891,12 +895,30 @@
         line-height: 24px;
         margin-top: 80px;
     }
+    .services-section {
+        padding: 45px 0 93px 0;
+    }
+    .proxy-slides {
+        margin-top: 40px;
+    }
 
     .hero-content {
         padding-top: 106px;
     }
     .services-section::after {
-        left: -120px;
+        left: 0;
+        background-image: url('/assets/images/services-bgTablet.png');
+        top: 0;
+
+    }
+    .scraping-slides {
+        margin-top: 0
+    }
+    .services-contents {
+        gap: 56px;
+    }
+    .datasets-slides {
+        margin-top: 0;
     }
 
 }
@@ -940,14 +962,9 @@
         max-width: 268px;
     }
 
-    .proxy-slides {
-        margin-top: 40px;
-    }
 
 
-    .services-section {
-        padding: 45px 0 93px 0;
-    }
+
 
     .scraping-section {
         padding: 45px 0 93px 0;
@@ -958,19 +975,13 @@
 
     }
 
-    .services-title {
-        font-size: 28px;
-        line-height: normal;
-    }
 
 
     .datasets-catalog.active {
         display: none;
     }
 
-    .scraping-slides {
-        margin-top: 0
-    }
+
 
 
     .datasets-catalog.active {
@@ -978,9 +989,6 @@
     }
 
 
-    .services-contents {
-        gap: 56px;
-    }
 
 
     .services-item {
@@ -1011,9 +1019,7 @@
     .hero-content {
         padding-top: 128px;
     }
-    .datasets-slides {
-        margin-top: 0;
-    }
+
     .services-title {
         font-size: 24px;
         line-height: normal;
