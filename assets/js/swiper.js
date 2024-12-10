@@ -1,6 +1,6 @@
 const swiper = new Swiper('.proxy-swiper', {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 32,
     pagination: {
         el: '.services-pagination',
         clickable: true,
