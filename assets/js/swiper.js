@@ -12,11 +12,11 @@ const swiper = new Swiper('.proxy-swiper', {
     breakpoints: {
         320: {
             slidesPerView: 1.2,
-            spaceBetween: 16
+            spaceBetween: 20
         },
         400: {
             slidesPerView: 1.3,
-            spaceBetween: 10
+            spaceBetween: 20
         },
         530: {
             slidesPerView: 1.8,
