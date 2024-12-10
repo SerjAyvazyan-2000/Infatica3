@@ -968,9 +968,7 @@
 
         flex: 1 1 40%
     }
-    .crunchBase-item{
-        padding: 26px 24px;
-    }
+
     .datasets-another-item {
         flex: 1 1 40%
 
@@ -1056,14 +1054,19 @@
     }
     .services-item {
         padding: 25px 24px;
-        gap: 13px;
+        gap: 16px;
 
+    }
+    .scraping-btn {
+        margin-top: 120px;
     }
     .services-title {
         font-size: 24px;
         line-height: normal;
     }
-
+    .services-contents{
+        gap: 54px;
+    }
     .services-section {
         padding: 40px 0 93px 0;
     }
@@ -1133,9 +1136,7 @@
         top: 0;
 
     }
-    .scraping-btn {
-        margin-top: 125px;
-    }
+
     .scraping-item-descr{
         gap: 17px;
     }

@@ -20,7 +20,9 @@ const swiper = new Swiper('.proxy-swiper', {
 
         },
         400: {
-            slidesPerView: 1.4,
+            slidesPerView: 1.2,
+            spaceBetween: 10
+
         },
         530: {
             slidesPerView: 1.8,
@@ -135,7 +137,7 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
             spaceBetween: 16
         },
         400: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.2,
             spaceBetween: 10
         },
         530: {

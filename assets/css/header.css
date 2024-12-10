@@ -1235,3 +1235,11 @@
         top: 8px;
     }
 }
+
+@media (max-width: 415px) {
+
+    .header-body {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+}
