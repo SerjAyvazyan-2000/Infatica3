@@ -179,9 +179,8 @@
     background-image: url('/assets/images/services-bg.png');
     background-repeat: no-repeat;
 
+
 }
-
-
 
 .datasets-section::after {
     content: "";
@@ -194,20 +193,22 @@
     background-image: url('/assets/images/services-bg.png');
     background-repeat: no-repeat;
 
+
 }
 
-.datasets-section::before {
+.scraping-section::after {
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    top: -100px;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-image: url('/assets/images/services-bg.png');
     background-repeat: no-repeat;
-}
 
+
+}
 
 
 .services-title {
@@ -757,7 +758,7 @@
 }
 
 @media (max-width: 1610px) {
-    .services-body::before{
+    .services-body::before {
         left: -170px;
     }
 }
@@ -772,10 +773,6 @@
 
     }
 
-    .datasets-section::after {
-        width: 100%;
-
-    }
 
 }
 
@@ -831,6 +828,7 @@
     .services-catalog {
         display: none;
     }
+
     .services-title {
         font-size: 28px;
         line-height: normal;
@@ -851,6 +849,10 @@
         font-size: 32px;
         line-height: normal;
         letter-spacing: -0.32px;
+    }
+
+    .datasets-section::after {
+        display: none;
     }
 
     .hero-text {
@@ -881,9 +883,11 @@
         background-size: cover;
         background-position: center;
     }
-    .datasets-item{
+
+    .datasets-item {
         padding: 26px 24px;
     }
+
     .datasets-slides {
         display: block !important;
         margin-top: 74px;
@@ -895,9 +899,11 @@
         line-height: 24px;
         margin-top: 80px;
     }
+
     .services-section {
         padding: 45px 0 93px 0;
     }
+
     .proxy-slides {
         margin-top: 40px;
     }
@@ -905,18 +911,26 @@
     .hero-content {
         padding-top: 106px;
     }
+
     .services-section::after {
         left: 0;
         background-image: url('/assets/images/services-bgTablet.png');
         top: 0;
 
     }
+
+    .scraping-section::after {
+        display: none;
+    }
+
     .scraping-slides {
         margin-top: 0
     }
+
     .services-contents {
         gap: 56px;
     }
+
     .datasets-slides {
         margin-top: 0;
     }
@@ -963,9 +977,6 @@
     }
 
 
-
-
-
     .scraping-section {
         padding: 45px 0 93px 0;
     }
@@ -976,19 +987,14 @@
     }
 
 
-
     .datasets-catalog.active {
         display: none;
     }
 
 
-
-
     .datasets-catalog.active {
         margin-top: 0;
     }
-
-
 
 
     .services-item {
@@ -1086,6 +1092,7 @@
     .hero-bottom-text {
         display: none;
     }
+
     .services-section::after {
         width: 100%;
         background-image: url('/assets/images/services-bgMobile.png');
@@ -1093,6 +1100,7 @@
         top: 0;
 
     }
+
     .services-mobile-clue p {
         max-width: 330px;
     }

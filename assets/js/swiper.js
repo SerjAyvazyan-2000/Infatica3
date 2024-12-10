@@ -11,6 +11,9 @@ const swiper = new Swiper('.proxy-swiper', {
     },
     breakpoints: {
         320: {
+            slidesPerView: 1,
+        },
+        360: {
             slidesPerView: 1.3,
         },
         400: {
@@ -69,6 +72,10 @@ function initSwiper() {
         },
         breakpoints: {
             320: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+            },
+            360: {
                 slidesPerView: 1.2,
                 spaceBetween: 16,
             },
@@ -117,6 +124,10 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
     },
     breakpoints: {
         320: {
+            slidesPerView: 1,
+            spaceBetween: 16
+        },
+        360: {
             slidesPerView: 1.2,
             spaceBetween: 16
         },
