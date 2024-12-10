@@ -181,42 +181,7 @@
 
 }
 
-.services-section::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/images/services-bg.png');
-    background-repeat: no-repeat;
-}
 
-.scraping-section::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-image: url('/assets/images/services-bg.png');
-    background-repeat: no-repeat;
-
-}
-
-.scraping-section::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/images/services-bg.png');
-    background-repeat: no-repeat;
-}
 
 .datasets-section::after {
     content: "";
@@ -243,19 +208,7 @@
     background-repeat: no-repeat;
 }
 
-.services-body::before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    background-image: url('/assets/images/services-bg.png');
-    background-repeat: no-repeat;
-    top: -270px;
-    left: -300px;
-    width: 70%;
-    transform: rotate(-5deg);
-    z-index: -1;
-}
+
 
 .services-title {
     color: #FFF;
@@ -803,6 +756,11 @@
     padding-bottom: 32px;
 }
 
+@media (max-width: 1610px) {
+    .services-body::before{
+        left: -170px;
+    }
+}
 
 @media (max-width: 1400px) {
     .services-section::after {
@@ -873,14 +831,8 @@
     .services-catalog {
         display: none;
     }
-    .services-section::before {
-        top: -200px;
 
-    }
-    .services-section::after{
-        top: -140px;
 
-    }
     .services-mobile-clue p {
         margin-top: 8px;
         color: rgba(255, 255, 255, 1);
@@ -943,7 +895,9 @@
     .hero-content {
         padding-top: 106px;
     }
-
+    .services-section::after {
+        left: -120px;
+    }
 
 }
 
@@ -1126,7 +1080,13 @@
     .hero-bottom-text {
         display: none;
     }
+    .services-section::after {
+        width: 100%;
+        background-image: url('/assets/images/services-bgMobile.png');
+        left: 0;
+        top: 0;
 
+    }
     .services-mobile-clue p {
         max-width: 330px;
     }
