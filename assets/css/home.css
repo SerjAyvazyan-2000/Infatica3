@@ -348,12 +348,12 @@
 }
 
 .services-item {
-    padding: 20px 20px;
+    padding: 24px 20px;
     border-radius: 24px;
     border: 1px solid #FFF;
     background: #F9FAFB;
     backdrop-filter: blur(9px);
-    gap: 16px;
+    gap: 13px;
     max-width: 268px;
     width: 100%;
     min-height: 440px;
@@ -448,6 +448,7 @@
 
 .service-tools {
     gap: 10px;
+    justify-content: space-between;
 }
 
 .service-tools-expert:hover {
@@ -555,7 +556,7 @@
 }
 
 .scraping-swiper .swiper-slide.big-slide {
-    min-width: 557px !important;
+    min-width: 566px !important;
     flex-shrink: 0 !important;
 
 
@@ -624,7 +625,7 @@
 .scraping-item {
     border-radius: 24px;
     background: #F9FAFB;
-    min-width: 557px;
+    min-width: 569px;
     min-height: 444px;
     overflow: hidden;
 }
@@ -722,7 +723,9 @@
     height: 40px;
     margin-left: -2px;
 }
-
+.datasets-image{
+    display: flex;
+}
 .datasets-title {
     color: #1C1C20;
     font-size: 16px;
@@ -799,13 +802,21 @@
 
     .services-mobile-clue {
         display: block;
+        padding-bottom: 30px;
     }
+    .services-item {
+        padding: 25px 20px;
+        gap: 15px;
 
+    }
     .swiper {
         overflow: unset;
     }
+    .datasets-text {
+        margin-top: 26px;
+    }
 
-    .services-mobile-clue h3 {
+        .services-mobile-clue h3 {
         color: #FFF;
         font-size: 24px;
         font-style: normal;
@@ -862,6 +873,9 @@
         font-size: 20px;
         margin-top: 8px;
     }
+    .datasets-pagination{
+        margin-top: 30px;
+    }
 
     .hero-content-tools {
         margin-top: 64px;
@@ -872,7 +886,9 @@
     .header-logo-desctop {
         max-width: 238px;
     }
-
+    .scraping-item {
+        min-width: 557px;
+    }
     .hero-section {
         min-height: 532px;
     }
@@ -885,9 +901,14 @@
     }
 
     .datasets-item {
-        padding: 26px 24px;
+        padding: 26px 23px;
     }
-
+    .crunchBase-item{
+         padding: 33px 22px 24px 22px;
+    }
+    .scraping-btn {
+        margin-top: 125px;
+    }
     .datasets-slides {
         display: block !important;
         margin-top: 74px;
@@ -918,7 +939,12 @@
         top: 0;
 
     }
-
+    .tablet-wrap{
+        display: block;
+    }
+    .icon-service-advantage {
+        margin-top: -10px;
+    }
     .scraping-section::after {
         display: none;
     }
@@ -942,7 +968,9 @@
 
         flex: 1 1 40%
     }
-
+    .crunchBase-item{
+        padding: 26px 24px;
+    }
     .datasets-another-item {
         flex: 1 1 40%
 
@@ -1001,6 +1029,7 @@
         min-width: 268px;
         min-height: 440px;
         padding: 18px 20px;
+
     }
 
     .scraping-item {
@@ -1025,7 +1054,11 @@
     .hero-content {
         padding-top: 128px;
     }
+    .services-item {
+        padding: 25px 24px;
+        gap: 13px;
 
+    }
     .services-title {
         font-size: 24px;
         line-height: normal;
@@ -1100,16 +1133,23 @@
         top: 0;
 
     }
-
+    .scraping-btn {
+        margin-top: 125px;
+    }
+    .scraping-item-descr{
+        gap: 17px;
+    }
     .services-mobile-clue p {
         max-width: 330px;
     }
 
     .datasets-pagination {
+        margin-top: 30px;
 
-        margin-top: 23px;
 
-
+    }
+    .mobile-wrap{
+        display: block;
     }
 
     .hero-section {

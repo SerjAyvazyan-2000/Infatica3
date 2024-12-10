@@ -198,6 +198,10 @@
         margin: 0 auto;
         padding: 0 15px;
     }
+    .services-section .container{
+        max-width: 778px;
+
+    }
 
 }
 @media (max-width: 415px) {

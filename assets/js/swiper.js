@@ -11,10 +11,13 @@ const swiper = new Swiper('.proxy-swiper', {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
+
         },
         360: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.2,
+            spaceBetween: 16
+
         },
         400: {
             slidesPerView: 1.4,
@@ -60,7 +63,7 @@ function initSwiper() {
 
     swiperScarping = new Swiper('.scraping-swiper', {
         slidesPerView: isSmallScreen ? 1 : 3,
-        spaceBetween: isSmallScreen ? 16 : 32,
+        spaceBetween: 40,
         loop: isSmallScreen,
         pagination: {
             el: '.scraping-pagination',
@@ -87,8 +90,8 @@ function initSwiper() {
                 spaceBetween: 16,
             },
             900: {
-                slidesPerView: 2,
-                spaceBetween: 10,
+                slidesPerView: 2.7,
+                spaceBetween: 20,
             },
 
             1200: {
@@ -151,7 +154,7 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
         },
         768: {
             slidesPerView: 2.7,
-            spaceBetween: 10
+            spaceBetween: 20
 
         },
 
