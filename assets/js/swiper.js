@@ -65,7 +65,7 @@ function initSwiper() {
 
     swiperScarping = new Swiper('.scraping-swiper', {
         slidesPerView: isSmallScreen ? 1 : 3,
-        spaceBetween: 40,
+        spaceBetween: 32,
         // loop: isSmallScreen,
         pagination: {
             el: '.scraping-pagination',
@@ -77,23 +77,23 @@ function initSwiper() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 'auto',
                 spaceBetween: 16,
             },
             360: {
-                slidesPerView: 1.2,
+                slidesPerView: 'auto',
                 spaceBetween: 16,
             },
             567: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
             },
             700: {
-                slidesPerView: 2.4,
+                slidesPerView: 'auto',
                 spaceBetween: 16,
             },
             900: {
-                slidesPerView: 2.7,
-                spaceBetween: 20,
+                slidesPerView: 'auto',
+                spaceBetween: 16,
             },
 
             1200: {
