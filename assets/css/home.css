@@ -800,8 +800,17 @@
 }
 
 @media (max-width: 1025px) {
+    .datasets-another-header {
+        margin-top: 18px;
 
-    .services-mobile-clue {
+    }
+    .datasets-text{
+        padding-bottom: 0;
+    }
+    .datasets-padding {
+        margin: 17px 23px 0;
+    }
+        .services-mobile-clue {
         display: block;
         padding-bottom: 30px;
     }
@@ -1033,7 +1042,7 @@
     }
 
     .services-item {
-        min-width: 268px;
+        min-width: 270px;
         min-height: 440px;
         padding: 18px 20px;
 
