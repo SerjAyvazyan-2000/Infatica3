@@ -36,7 +36,7 @@ const swiper = new Swiper('.proxy-swiper', {
 
         760: {
             slidesPerView: 2.7,
-            spaceBetween: 16
+            spaceBetween: 10
 
         },
         1025: {
@@ -66,7 +66,7 @@ function initSwiper() {
     swiperScarping = new Swiper('.scraping-swiper', {
         slidesPerView: isSmallScreen ? 1 : 3,
         spaceBetween: 40,
-        loop: isSmallScreen,
+        // loop: isSmallScreen,
         pagination: {
             el: '.scraping-pagination',
             clickable: true,

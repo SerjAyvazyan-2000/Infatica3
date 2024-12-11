@@ -735,12 +735,13 @@
 }
 
 .datasets-padding {
-    margin: 21px 24px 0;
+    margin: 0 23px 0;
 }
 
 .datasets-tools-padding {
     padding: 16px 24px 29px 24px;
 }
+
 
 .proxy-slides {
     margin-top: 74px;
@@ -1021,7 +1022,15 @@
     .datasets-catalog.active {
         margin-top: 0;
     }
-
+    .datasets-tools-padding {
+        padding: 16px 23px 26px 23px;
+    }
+    .datasets-another-header{
+        margin-top: 17px;
+    }
+    .datasets-another-item{
+        min-height: 304px;
+    }
 
     .services-item {
         min-width: 268px;
