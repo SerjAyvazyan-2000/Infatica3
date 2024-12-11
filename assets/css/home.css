@@ -958,7 +958,10 @@
     .scraping-section::after {
         display: none;
     }
+    .datasets-tools-padding {
+        padding: 16px 23px 25px 23px;
 
+    }
     .scraping-slides {
         margin-top: 0
     }
@@ -1038,7 +1041,7 @@
         margin-top: 17px;
     }
     .datasets-another-item{
-        min-height: 304px;
+        min-height: 300px;
     }
 
     .services-item {
