@@ -192,6 +192,10 @@
 
 }
 @media (max-width: 1025px) {
+
+    .header .container{
+        max-width: 776px;
+    }
     .container {
         max-width: 768px;
         width: 100%;
@@ -214,6 +218,9 @@
     .services-section .container{
         max-width: 360px;
 
+    }
+    .header .container{
+        max-width: 360px;
     }
 
 

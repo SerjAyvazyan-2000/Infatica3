@@ -156,7 +156,7 @@ const swiperDatasets = new Swiper('.datasets-swiper', {
         },
         768: {
             slidesPerView: 2.7,
-            spaceBetween: 20
+            spaceBetween: 16
 
         },
 

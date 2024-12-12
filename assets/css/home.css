@@ -735,7 +735,7 @@
 }
 
 .datasets-padding {
-    margin: 0 23px 0;
+    margin: 20px 23px 0;
 }
 
 .datasets-tools-padding {
@@ -804,6 +804,14 @@
         margin-top: 18px;
 
     }
+    .scraping-pagination {
+        margin-left: 0;
+
+    }
+    .services-pagination{
+        margin-left: 0;
+
+    }
     .datasets-text{
         padding-bottom: 0;
     }
@@ -817,6 +825,7 @@
     .services-item {
         padding: 25px 20px;
         gap: 15px;
+        min-height: 444px;
 
     }
     .swiper {
@@ -949,6 +958,9 @@
         top: 0;
 
     }
+    .scraping-small-btn{
+        max-width: 100%;
+    }
     .tablet-wrap{
         display: block;
     }
@@ -1046,13 +1058,13 @@
 
     .services-item {
         min-width: 270px;
-        min-height: 440px;
+        min-height: 444px;
         padding: 18px 20px;
 
     }
 
     .scraping-item {
-        min-height: 440px;
+        min-height: 444px;
     }
 
     .hero-btn {
