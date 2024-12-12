@@ -134,7 +134,10 @@
 .pricing-service-item:hover {
     background: rgba(243, 244, 248, 0.50);
 }
-
+/*.proxy-swiper .swiper-slide {*/
+/*    flex-shrink: 0;*/
+/*    width: 300px !important; !* Пример фиксированной ширины *!*/
+/*}*/
 .service-item-text {
     color: #7D7D82;
     font-size: 13px;
