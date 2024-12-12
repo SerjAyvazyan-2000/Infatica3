@@ -1,7 +1,7 @@
 const swiper = new Swiper('.proxy-swiper', {
     slidesPerView: 4,
     spaceBetween: 32,
-    // loop: true,
+    loop: true,
     pagination: {
         el: '.services-pagination',
         clickable: true,
@@ -36,7 +36,7 @@ const swiper = new Swiper('.proxy-swiper', {
         },
 
         760: {
-            slidesPerView: 'auto',
+            slidesPerView: 2.7,
             spaceBetween: 10
 
         },
